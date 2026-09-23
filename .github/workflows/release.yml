@@ -8,14 +8,17 @@ on:
     tags: ['v*']
 permissions:
   contents: write
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 jobs:
   release:
-    runs-on: ubuntu-latest
+    # Tags setzen nur Org-Mitglieder → die geteilten self-hosted Runner der Orga.
+    runs-on: [self-hosted, Linux, shared]
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
-          node-version: 22
+          node-version: 24
       - run: npm run check
         env:
           RELEASE_TAG: ${{ github.ref_name }}

@@ -1,0 +1,431 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="1900" viewBox="0 0 880 1900" role="img">
+<rect x="0" y="0" width="880" height="1900" fill="#ffffff" />
+<rect x="360" y="0" width="260" height="1900" fill="#f4f6fb" />
+<rect x="620" y="0" width="260" height="1900" fill="#0a0f18" />
+<text x="16" y="26" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="start">Variable</text>
+<text x="376" y="26" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="start">hell</text>
+<text x="636" y="26" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#e6eaf2" text-anchor="start">dunkel</text>
+<text x="16" y="56" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--bg</text>
+<rect x="376" y="44" width="28" height="16" fill="#f4f6fb" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="56" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#f4f6fb</text>
+<rect x="636" y="44" width="28" height="16" fill="#0a0f18" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="56" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#0a0f18</text>
+<rect x="0" y="64" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="80" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--surface</text>
+<rect x="376" y="68" width="28" height="16" fill="#ffffff" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="80" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#ffffff</text>
+<rect x="636" y="68" width="28" height="16" fill="#151d2e" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="80" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#151d2e</text>
+<text x="16" y="104" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--surface-muted</text>
+<rect x="376" y="92" width="28" height="16" fill="#f8fafc" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="104" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#f8fafc</text>
+<rect x="636" y="92" width="28" height="16" fill="#1b2438" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="104" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#1b2438</text>
+<rect x="0" y="112" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="128" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--surface-subtle</text>
+<rect x="376" y="116" width="28" height="16" fill="#fafbfd" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="128" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#fafbfd</text>
+<rect x="636" y="116" width="28" height="16" fill="#10192a" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="128" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#10192a</text>
+<text x="16" y="152" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--surface-hover</text>
+<rect x="376" y="140" width="28" height="16" fill="#f1f5f9" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="152" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#f1f5f9</text>
+<rect x="636" y="140" width="28" height="16" fill="#1d263c" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="152" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#1d263c</text>
+<rect x="0" y="160" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="176" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--skeleton</text>
+<rect x="376" y="164" width="28" height="16" fill="#e7ecf3" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="176" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#e7ecf3</text>
+<rect x="636" y="164" width="28" height="16" fill="#222d45" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="176" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#222d45</text>
+<text x="16" y="200" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--skeleton-hi</text>
+<rect x="376" y="188" width="28" height="16" fill="#f4f7fb" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="200" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#f4f7fb</text>
+<rect x="636" y="188" width="28" height="16" fill="#2d3b57" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="200" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#2d3b57</text>
+<rect x="0" y="208" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="224" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--border-subtle</text>
+<rect x="376" y="212" width="28" height="16" fill="#dde3ec" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="224" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#dde3ec</text>
+<rect x="636" y="212" width="28" height="16" fill="#27324a" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="224" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#27324a</text>
+<text x="16" y="248" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--border</text>
+<rect x="376" y="236" width="28" height="16" fill="#c3ccda" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="248" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#c3ccda</text>
+<rect x="636" y="236" width="28" height="16" fill="#3c4a66" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="248" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#3c4a66</text>
+<rect x="0" y="256" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="272" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--border-strong</text>
+<rect x="376" y="260" width="28" height="16" fill="#94a3b8" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="272" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#94a3b8</text>
+<rect x="636" y="260" width="28" height="16" fill="#55658a" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="272" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#55658a</text>
+<text x="16" y="296" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--text-strong</text>
+<rect x="376" y="284" width="28" height="16" fill="#0b1220" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="296" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#0b1220</text>
+<rect x="636" y="284" width="28" height="16" fill="#f8fafc" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="296" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#f8fafc</text>
+<rect x="0" y="304" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="320" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--text</text>
+<rect x="376" y="308" width="28" height="16" fill="#0f172a" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="320" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#0f172a</text>
+<rect x="636" y="308" width="28" height="16" fill="#e6eaf2" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="320" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#e6eaf2</text>
+<text x="16" y="344" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--text-heading</text>
+<rect x="376" y="332" width="28" height="16" fill="#1e293b" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="344" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#1e293b</text>
+<rect x="636" y="332" width="28" height="16" fill="#cdd7e6" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="344" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#cdd7e6</text>
+<rect x="0" y="352" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="368" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--text-muted</text>
+<rect x="376" y="356" width="28" height="16" fill="#475569" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="368" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#475569</text>
+<rect x="636" y="356" width="28" height="16" fill="#9fb0c6" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="368" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#9fb0c6</text>
+<text x="16" y="392" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--text-soft</text>
+<rect x="376" y="380" width="28" height="16" fill="#505d73" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="392" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#505d73</text>
+<rect x="636" y="380" width="28" height="16" fill="#93a2b8" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="392" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#93a2b8</text>
+<rect x="0" y="400" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="416" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--text-subtle</text>
+<rect x="376" y="404" width="28" height="16" fill="#5f6e85" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="416" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#5f6e85</text>
+<rect x="636" y="404" width="28" height="16" fill="#8492a8" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="416" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#8492a8</text>
+<text x="16" y="440" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--primary</text>
+<rect x="376" y="428" width="28" height="16" fill="#2563eb" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="440" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#2563eb</text>
+<rect x="636" y="428" width="28" height="16" fill="#3b82f6" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="440" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#3b82f6</text>
+<rect x="0" y="448" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="464" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--primary-hover</text>
+<rect x="376" y="452" width="28" height="16" fill="#1d4ed8" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="464" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#1d4ed8</text>
+<rect x="636" y="452" width="28" height="16" fill="#60a5fa" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="464" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#60a5fa</text>
+<text x="16" y="488" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--primary-strong</text>
+<rect x="376" y="476" width="28" height="16" fill="#1e40af" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="488" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#1e40af</text>
+<rect x="636" y="476" width="28" height="16" fill="#93c5fd" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="488" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#93c5fd</text>
+<rect x="0" y="496" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="512" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--primary-soft</text>
+<rect x="376" y="500" width="28" height="16" fill="#eff6ff" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="512" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#eff6ff</text>
+<rect x="636" y="500" width="28" height="16" fill="#17233f" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="512" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#17233f</text>
+<text x="16" y="536" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--on-primary</text>
+<rect x="376" y="524" width="28" height="16" fill="#ffffff" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="536" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#ffffff</text>
+<rect x="636" y="524" width="28" height="16" fill="#ffffff" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="536" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#ffffff  (wie hell)</text>
+<rect x="0" y="544" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="560" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--primary-ring</text>
+<rect x="376" y="548" width="28" height="16" fill="rgba(37, 99, 235, 0.20)" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="560" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">rgba(37, 99, 235, 0.20)</text>
+<rect x="636" y="548" width="28" height="16" fill="rgba(59, 130, 246, 0.32)" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="560" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">rgba(59, 130, 246, 0.32)</text>
+<text x="16" y="584" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--brand</text>
+<rect x="376" y="572" width="28" height="16" fill="#ed1c24" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="584" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#ed1c24</text>
+<rect x="636" y="572" width="28" height="16" fill="#ed1c24" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="584" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#ed1c24  (wie hell)</text>
+<rect x="0" y="592" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="608" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--brand-soft</text>
+<rect x="376" y="596" width="28" height="16" fill="rgba(237, 28, 36, 0.16)" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="608" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">rgba(237, 28, 36, 0.16)</text>
+<rect x="636" y="596" width="28" height="16" fill="rgba(237, 28, 36, 0.16)" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="608" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">rgba(237, 28, 36, 0.16)  (wie hell)</text>
+<text x="16" y="632" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--success</text>
+<rect x="376" y="620" width="28" height="16" fill="#16a34a" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="632" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#16a34a</text>
+<rect x="636" y="620" width="28" height="16" fill="#22c55e" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="632" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#22c55e</text>
+<rect x="0" y="640" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="656" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--success-text</text>
+<rect x="376" y="644" width="28" height="16" fill="#166534" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="656" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#166534</text>
+<rect x="636" y="644" width="28" height="16" fill="#4ade80" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="656" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#4ade80</text>
+<text x="16" y="680" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--success-soft</text>
+<rect x="376" y="668" width="28" height="16" fill="#dcfce7" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="680" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#dcfce7</text>
+<rect x="636" y="668" width="28" height="16" fill="#14301f" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="680" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#14301f</text>
+<rect x="0" y="688" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="704" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--danger</text>
+<rect x="376" y="692" width="28" height="16" fill="#dc2626" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="704" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#dc2626</text>
+<rect x="636" y="692" width="28" height="16" fill="#ef4444" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="704" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#ef4444</text>
+<text x="16" y="728" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--danger-text</text>
+<rect x="376" y="716" width="28" height="16" fill="#991b1b" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="728" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#991b1b</text>
+<rect x="636" y="716" width="28" height="16" fill="#f87171" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="728" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#f87171</text>
+<rect x="0" y="736" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="752" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--danger-soft</text>
+<rect x="376" y="740" width="28" height="16" fill="#fee2e2" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="752" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#fee2e2</text>
+<rect x="636" y="740" width="28" height="16" fill="#3a1518" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="752" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#3a1518</text>
+<text x="16" y="776" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--danger-border</text>
+<rect x="376" y="764" width="28" height="16" fill="#fca5a5" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="776" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#fca5a5</text>
+<rect x="636" y="764" width="28" height="16" fill="#7f2a2a" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="776" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#7f2a2a</text>
+<rect x="0" y="784" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="800" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--danger-ring</text>
+<rect x="376" y="788" width="28" height="16" fill="rgba(220, 38, 38, 0.20)" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="800" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">rgba(220, 38, 38, 0.20)</text>
+<rect x="636" y="788" width="28" height="16" fill="rgba(239, 68, 68, 0.32)" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="800" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">rgba(239, 68, 68, 0.32)</text>
+<text x="16" y="824" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--warning</text>
+<rect x="376" y="812" width="28" height="16" fill="#d97706" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="824" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#d97706</text>
+<rect x="636" y="812" width="28" height="16" fill="#f59e0b" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="824" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#f59e0b</text>
+<rect x="0" y="832" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="848" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--warning-text</text>
+<rect x="376" y="836" width="28" height="16" fill="#78350f" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="848" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#78350f</text>
+<rect x="636" y="836" width="28" height="16" fill="#fbbf24" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="848" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#fbbf24</text>
+<text x="16" y="872" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--warning-soft</text>
+<rect x="376" y="860" width="28" height="16" fill="#fef3c7" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="872" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#fef3c7</text>
+<rect x="636" y="860" width="28" height="16" fill="#3a2c10" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="872" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#3a2c10</text>
+<rect x="0" y="880" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="896" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--warning-bar</text>
+<rect x="376" y="884" width="28" height="16" fill="#fbbf24" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="896" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#fbbf24</text>
+<rect x="636" y="884" width="28" height="16" fill="#f59e0b" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="896" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#f59e0b</text>
+<text x="16" y="920" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--warning-on-bar</text>
+<rect x="376" y="908" width="28" height="16" fill="#78350f" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="920" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#78350f</text>
+<rect x="636" y="908" width="28" height="16" fill="#231603" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="920" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#231603</text>
+<rect x="0" y="928" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="944" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--admin</text>
+<rect x="376" y="932" width="28" height="16" fill="#9333ea" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="944" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#9333ea</text>
+<rect x="636" y="932" width="28" height="16" fill="#c084fc" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="944" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#c084fc</text>
+<text x="16" y="968" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--admin-text</text>
+<rect x="376" y="956" width="28" height="16" fill="#6b21a8" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="968" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#6b21a8</text>
+<rect x="636" y="956" width="28" height="16" fill="#dcb4fd" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="968" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#dcb4fd</text>
+<rect x="0" y="976" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="992" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--admin-soft</text>
+<rect x="376" y="980" width="28" height="16" fill="#f5e9fd" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="992" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#f5e9fd</text>
+<rect x="636" y="980" width="28" height="16" fill="#2e1d3f" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="992" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#2e1d3f</text>
+<text x="16" y="1016" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--admin-border</text>
+<rect x="376" y="1004" width="28" height="16" fill="#d8b4fe" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1016" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#d8b4fe</text>
+<rect x="636" y="1004" width="28" height="16" fill="#6b3f96" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1016" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#6b3f96</text>
+<rect x="0" y="1024" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="1040" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--admin-tint</text>
+<rect x="376" y="1028" width="28" height="16" fill="rgba(192, 132, 252, 0.22)" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1040" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">rgba(192, 132, 252, 0.22)</text>
+<rect x="636" y="1028" width="28" height="16" fill="rgba(192, 132, 252, 0.22)" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1040" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">rgba(192, 132, 252, 0.22)  (wie hell)</text>
+<text x="16" y="1064" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--accent</text>
+<rect x="376" y="1052" width="28" height="16" fill="#7c3aed" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1064" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#7c3aed</text>
+<rect x="636" y="1052" width="28" height="16" fill="#a78bfa" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1064" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#a78bfa</text>
+<rect x="0" y="1072" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="1088" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--accent-text</text>
+<rect x="376" y="1076" width="28" height="16" fill="#5b21b6" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1088" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#5b21b6</text>
+<rect x="636" y="1076" width="28" height="16" fill="#c4b5fd" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1088" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#c4b5fd</text>
+<text x="16" y="1112" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--accent-soft</text>
+<rect x="376" y="1100" width="28" height="16" fill="#ede9fe" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1112" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#ede9fe</text>
+<rect x="636" y="1100" width="28" height="16" fill="#241a3d" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1112" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#241a3d</text>
+<rect x="0" y="1120" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="1136" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--info</text>
+<rect x="376" y="1124" width="28" height="16" fill="#0369a1" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1136" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#0369a1</text>
+<rect x="636" y="1124" width="28" height="16" fill="#38bdf8" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1136" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#38bdf8</text>
+<text x="16" y="1160" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--info-soft</text>
+<rect x="376" y="1148" width="28" height="16" fill="#f0f9ff" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1160" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#f0f9ff</text>
+<rect x="636" y="1148" width="28" height="16" fill="#102438" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1160" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#102438</text>
+<rect x="0" y="1168" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="1184" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--tag-red</text>
+<rect x="376" y="1172" width="28" height="16" fill="#dc2626" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1184" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#dc2626</text>
+<rect x="636" y="1172" width="28" height="16" fill="#f87171" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1184" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#f87171</text>
+<text x="16" y="1208" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--tag-orange</text>
+<rect x="376" y="1196" width="28" height="16" fill="#ea580c" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1208" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#ea580c</text>
+<rect x="636" y="1196" width="28" height="16" fill="#fb923c" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1208" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#fb923c</text>
+<rect x="0" y="1216" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="1232" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--tag-yellow</text>
+<rect x="376" y="1220" width="28" height="16" fill="#ca8a04" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1232" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#ca8a04</text>
+<rect x="636" y="1220" width="28" height="16" fill="#facc15" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1232" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#facc15</text>
+<text x="16" y="1256" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--tag-green</text>
+<rect x="376" y="1244" width="28" height="16" fill="#16a34a" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1256" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#16a34a</text>
+<rect x="636" y="1244" width="28" height="16" fill="#4ade80" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1256" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#4ade80</text>
+<rect x="0" y="1264" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="1280" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--tag-teal</text>
+<rect x="376" y="1268" width="28" height="16" fill="#0d9488" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1280" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#0d9488</text>
+<rect x="636" y="1268" width="28" height="16" fill="#2dd4bf" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1280" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#2dd4bf</text>
+<text x="16" y="1304" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--tag-blue</text>
+<rect x="376" y="1292" width="28" height="16" fill="#2563eb" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1304" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#2563eb</text>
+<rect x="636" y="1292" width="28" height="16" fill="#60a5fa" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1304" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#60a5fa</text>
+<rect x="0" y="1312" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="1328" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--tag-violet</text>
+<rect x="376" y="1316" width="28" height="16" fill="#7c3aed" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1328" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#7c3aed</text>
+<rect x="636" y="1316" width="28" height="16" fill="#a78bfa" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1328" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#a78bfa</text>
+<text x="16" y="1352" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--tag-pink</text>
+<rect x="376" y="1340" width="28" height="16" fill="#db2777" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1352" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#db2777</text>
+<rect x="636" y="1340" width="28" height="16" fill="#f472b6" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1352" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#f472b6</text>
+<rect x="0" y="1360" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="1376" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--tag-gray</text>
+<rect x="376" y="1364" width="28" height="16" fill="#64748b" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1376" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#64748b</text>
+<rect x="636" y="1364" width="28" height="16" fill="#94a3b8" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1376" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#94a3b8</text>
+<text x="16" y="1400" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--sidebar</text>
+<rect x="376" y="1388" width="28" height="16" fill="#0f172a" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1400" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#0f172a</text>
+<rect x="636" y="1388" width="28" height="16" fill="#0d1524" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1400" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#0d1524</text>
+<rect x="0" y="1408" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="1424" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--sidebar-border</text>
+<rect x="376" y="1412" width="28" height="16" fill="#1f2a3d" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1424" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#1f2a3d</text>
+<rect x="636" y="1412" width="28" height="16" fill="#1f2a3d" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1424" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#1f2a3d</text>
+<text x="16" y="1448" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--sidebar-hover</text>
+<rect x="376" y="1436" width="28" height="16" fill="#263348" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1448" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#263348</text>
+<rect x="636" y="1436" width="28" height="16" fill="#1e2a40" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1448" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#1e2a40</text>
+<rect x="0" y="1456" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="1472" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--sidebar-item</text>
+<rect x="376" y="1460" width="28" height="16" fill="#94a3b8" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1472" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#94a3b8</text>
+<rect x="636" y="1460" width="28" height="16" fill="#94a3b8" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1472" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#94a3b8</text>
+<text x="16" y="1496" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--sidebar-item-active</text>
+<rect x="376" y="1484" width="28" height="16" fill="#e2e8f0" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1496" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#e2e8f0</text>
+<rect x="636" y="1484" width="28" height="16" fill="#e2e8f0" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1496" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#e2e8f0</text>
+<rect x="0" y="1504" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="1520" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--sidebar-section</text>
+<rect x="376" y="1508" width="28" height="16" fill="#475569" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1520" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#475569</text>
+<rect x="636" y="1508" width="28" height="16" fill="#64748b" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1520" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#64748b</text>
+<text x="16" y="1544" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--sidebar-active-bg</text>
+<rect x="376" y="1532" width="28" height="16" fill="rgba(37, 99, 235, 0.18)" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1544" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">rgba(37, 99, 235, 0.18)</text>
+<rect x="636" y="1532" width="28" height="16" fill="rgba(59, 130, 246, 0.20)" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1544" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">rgba(59, 130, 246, 0.20)</text>
+<rect x="0" y="1552" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="1568" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--sidebar-accent</text>
+<rect x="376" y="1556" width="28" height="16" fill="#3b82f6" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1568" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#3b82f6</text>
+<rect x="636" y="1556" width="28" height="16" fill="#60a5fa" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1568" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#60a5fa</text>
+<text x="16" y="1592" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--bar</text>
+<rect x="376" y="1580" width="28" height="16" fill="#1e293b" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1592" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#1e293b</text>
+<rect x="636" y="1580" width="28" height="16" fill="#1e293b" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1592" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#1e293b  (wie hell)</text>
+<rect x="0" y="1600" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="1616" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--bar-border</text>
+<rect x="376" y="1604" width="28" height="16" fill="#0f172a" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1616" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#0f172a</text>
+<rect x="636" y="1604" width="28" height="16" fill="#0f172a" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1616" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#0f172a  (wie hell)</text>
+<text x="16" y="1640" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--bar-text</text>
+<rect x="376" y="1628" width="28" height="16" fill="#f1f5f9" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1640" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#f1f5f9</text>
+<rect x="636" y="1628" width="28" height="16" fill="#f1f5f9" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1640" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#f1f5f9  (wie hell)</text>
+<rect x="0" y="1648" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="1664" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--bar-text-muted</text>
+<rect x="376" y="1652" width="28" height="16" fill="#cbd5e1" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1664" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#cbd5e1</text>
+<rect x="636" y="1652" width="28" height="16" fill="#cbd5e1" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1664" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#cbd5e1  (wie hell)</text>
+<text x="16" y="1688" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--bar-btn-border</text>
+<rect x="376" y="1676" width="28" height="16" fill="#334155" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1688" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#334155</text>
+<rect x="636" y="1676" width="28" height="16" fill="#334155" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1688" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#334155  (wie hell)</text>
+<rect x="0" y="1696" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="1712" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--tooltip-bg</text>
+<rect x="376" y="1700" width="28" height="16" fill="#0f172a" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1712" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#0f172a</text>
+<rect x="636" y="1700" width="28" height="16" fill="#0f172a" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1712" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#0f172a  (wie hell)</text>
+<text x="16" y="1736" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--tooltip-text</text>
+<rect x="376" y="1724" width="28" height="16" fill="#f8fafc" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1736" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#f8fafc</text>
+<rect x="636" y="1724" width="28" height="16" fill="#f8fafc" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1736" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#f8fafc  (wie hell)</text>
+<rect x="0" y="1744" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="1760" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--tooltip-border</text>
+<rect x="376" y="1748" width="28" height="16" fill="#1e293b" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1760" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#1e293b</text>
+<rect x="636" y="1748" width="28" height="16" fill="#1e293b" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1760" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#1e293b  (wie hell)</text>
+<text x="16" y="1784" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--select-bg</text>
+<rect x="376" y="1772" width="28" height="16" fill="rgba(37, 99, 235, 0.22)" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1784" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">rgba(37, 99, 235, 0.22)</text>
+<rect x="636" y="1772" width="28" height="16" fill="rgba(59, 130, 246, 0.30)" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1784" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">rgba(59, 130, 246, 0.30)</text>
+<rect x="0" y="1792" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="1808" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--scrollbar-thumb</text>
+<rect x="376" y="1796" width="28" height="16" fill="#cbd5e1" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1808" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#cbd5e1</text>
+<rect x="636" y="1796" width="28" height="16" fill="#3b4863" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1808" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#3b4863</text>
+<text x="16" y="1832" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--scrollbar-thumb-hover</text>
+<rect x="376" y="1820" width="28" height="16" fill="#94a3b8" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1832" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">#94a3b8</text>
+<rect x="636" y="1820" width="28" height="16" fill="#4b5a75" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1832" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">#4b5a75</text>
+<rect x="0" y="1840" width="360" height="24" fill="#f8fafc" />
+<text x="16" y="1856" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--overlay</text>
+<rect x="376" y="1844" width="28" height="16" fill="rgba(15, 23, 42, 0.45)" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1856" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">rgba(15, 23, 42, 0.45)</text>
+<rect x="636" y="1844" width="28" height="16" fill="rgba(0, 0, 0, 0.62)" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1856" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">rgba(0, 0, 0, 0.62)</text>
+<text x="16" y="1880" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">--overlay-strong</text>
+<rect x="376" y="1868" width="28" height="16" fill="rgba(15, 23, 42, 0.72)" stroke="#c3ccda" stroke-width="1"/>
+<text x="414" y="1880" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#475569" text-anchor="start">rgba(15, 23, 42, 0.72)</text>
+<rect x="636" y="1868" width="28" height="16" fill="rgba(0, 0, 0, 0.82)" stroke="#3c4a66" stroke-width="1"/>
+<text x="674" y="1880" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#9fb0c6" text-anchor="start">rgba(0, 0, 0, 0.82)</text>
+</svg>

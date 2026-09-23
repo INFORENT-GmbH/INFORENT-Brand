@@ -3,12 +3,17 @@ on:
   pull_request:
   push:
     branches: [main]
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 jobs:
   check:
-    runs-on: ubuntu-latest
+    # Öffentliches Repo: Pull Requests (auch aus Forks) laufen auf GitHub-eigenen
+    # Runnern — fremder Code soll nie auf unseren self-hosted Maschinen laufen.
+    # Pushes auf main kommen nur von Org-Mitgliedern und nutzen die geteilten Runner.
+    runs-on: ${{ github.event_name == 'pull_request' && 'ubuntu-latest' || fromJSON('["self-hosted","Linux","shared"]') }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
-          node-version: 22
+          node-version: 24
       - run: npm run check

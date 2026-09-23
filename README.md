@@ -10,6 +10,20 @@ keiner der beiden definiert Farben selbst.
 | `tokens.css` | drei `:root`-Regeln: Geometrie (Abstände, Radien, Schriftgrößen, Schatten, Dauer), helle Palette, dunkle Palette (`:root[data-theme='dark']`) |
 | `logo.png` | die Wortmarke (200 × 110, dunkle Grafik) |
 
+<img src="logo.png" alt="INFORENT" width="120">
+
+![Kernfarben hell und dunkel](preview/palette.svg)
+
+<details>
+<summary>Alle Farbvariablen (hell | dunkel)</summary>
+
+![Alle Farbvariablen](preview/tokens.svg)
+
+</details>
+
+Die Bilder erzeugt `npm run preview` aus `tokens.css`; `npm run check` schlägt fehl, wenn sie nicht
+mehr passen.
+
 Bedeutung und Regeln der Werte (wann `--brand`, wann `--primary`, Kontraste, Schriften):
 `docs/areas/brand.md` im Portal-Repo.
 
@@ -42,7 +56,8 @@ Dunkelmodus: `data-theme="dark"` auf `<html>` setzen, alle Variablen schalten mi
 
 ## Neue Version veröffentlichen
 
-1. Änderung per Pull Request, `npm run check` muss grün sein.
+1. Änderung per Pull Request, danach `npm run preview` (Vorschaubilder neu); `npm run check` muss
+   grün sein.
 2. `version` in `package.json` hochzählen, Eintrag in `CHANGELOG.md`.
 3. Annotierten Tag setzen und pushen — der Tag-Text wird die Release-Notiz:
    ```bash

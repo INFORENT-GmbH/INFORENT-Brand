@@ -5,13 +5,17 @@
   "license": "UNLICENSED",
   "repository": "github:INFORENT-GmbH/INFORENT-Brand",
   "type": "module",
-  "files": ["tokens.css", "logo.png"],
+  "files": [
+    "tokens.css",
+    "logo.png"
+  ],
   "exports": {
     "./tokens.css": "./tokens.css",
     "./logo.png": "./logo.png",
     "./package.json": "./package.json"
   },
   "scripts": {
-    "check": "node scripts/check.mjs"
+    "check": "node scripts/check.mjs && node scripts/preview.mjs --check",
+    "preview": "node scripts/preview.mjs"
   }
 }

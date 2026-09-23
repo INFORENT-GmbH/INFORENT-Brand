@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="470" viewBox="0 0 880 470" role="img">
+<rect x="0" y="0" width="440" height="470" fill="#f4f6fb" />
+<text x="24" y="36" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#475569" text-anchor="start">HELL</text>
+<rect x="24" y="52" width="392" height="118" fill="#ffffff" stroke="#c3ccda" stroke-width="1"/>
+<text x="44" y="84" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#1e293b" text-anchor="start">Cloud-Server</text>
+<rect x="44" y="94" width="36" height="1.5" fill="#ed1c24" />
+<text x="44" y="118" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="13" font-weight="400" fill="#475569" text-anchor="start">Stundengenau abgerechnet, mit Monatsdeckel.</text>
+<rect x="44" y="132" width="112" height="28" fill="#2563eb" />
+<text x="100" y="150" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">Bestellen</text>
+<rect x="168" y="132" width="90" height="28" fill="#eff6ff" />
+<text x="213" y="150" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#1e40af" text-anchor="middle">Details</text>
+<rect x="24" y="190" width="88" height="44" fill="#2563eb" stroke="#dde3ec" stroke-width="1"/>
+<text x="24" y="250" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#0f172a" text-anchor="start">Primär</text>
+<text x="24" y="264" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#5f6e85" text-anchor="start">#2563eb</text>
+<rect x="124" y="190" width="88" height="44" fill="#ed1c24" stroke="#dde3ec" stroke-width="1"/>
+<text x="124" y="250" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#0f172a" text-anchor="start">Marke</text>
+<text x="124" y="264" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#5f6e85" text-anchor="start">#ed1c24</text>
+<rect x="224" y="190" width="88" height="44" fill="#0f172a" stroke="#dde3ec" stroke-width="1"/>
+<text x="224" y="250" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#0f172a" text-anchor="start">Text</text>
+<text x="224" y="264" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#5f6e85" text-anchor="start">#0f172a</text>
+<rect x="324" y="190" width="88" height="44" fill="#475569" stroke="#dde3ec" stroke-width="1"/>
+<text x="324" y="250" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#0f172a" text-anchor="start">Text gedämpft</text>
+<text x="324" y="264" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#5f6e85" text-anchor="start">#475569</text>
+<rect x="24" y="282" width="88" height="44" fill="#f4f6fb" stroke="#dde3ec" stroke-width="1"/>
+<text x="24" y="342" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#0f172a" text-anchor="start">Hintergrund</text>
+<text x="24" y="356" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#5f6e85" text-anchor="start">#f4f6fb</text>
+<rect x="124" y="282" width="88" height="44" fill="#ffffff" stroke="#dde3ec" stroke-width="1"/>
+<text x="124" y="342" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#0f172a" text-anchor="start">Fläche</text>
+<text x="124" y="356" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#5f6e85" text-anchor="start">#ffffff</text>
+<rect x="224" y="282" width="88" height="44" fill="#c3ccda" stroke="#dde3ec" stroke-width="1"/>
+<text x="224" y="342" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#0f172a" text-anchor="start">Rahmen</text>
+<text x="224" y="356" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#5f6e85" text-anchor="start">#c3ccda</text>
+<rect x="324" y="282" width="88" height="44" fill="#7c3aed" stroke="#dde3ec" stroke-width="1"/>
+<text x="324" y="342" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#0f172a" text-anchor="start">Akzent</text>
+<text x="324" y="356" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#5f6e85" text-anchor="start">#7c3aed</text>
+<rect x="24" y="374" width="88" height="44" fill="#16a34a" stroke="#dde3ec" stroke-width="1"/>
+<text x="24" y="434" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#0f172a" text-anchor="start">Erfolg</text>
+<text x="24" y="448" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#5f6e85" text-anchor="start">#16a34a</text>
+<rect x="124" y="374" width="88" height="44" fill="#d97706" stroke="#dde3ec" stroke-width="1"/>
+<text x="124" y="434" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#0f172a" text-anchor="start">Warnung</text>
+<text x="124" y="448" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#5f6e85" text-anchor="start">#d97706</text>
+<rect x="224" y="374" width="88" height="44" fill="#dc2626" stroke="#dde3ec" stroke-width="1"/>
+<text x="224" y="434" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#0f172a" text-anchor="start">Gefahr</text>
+<text x="224" y="448" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#5f6e85" text-anchor="start">#dc2626</text>
+<rect x="324" y="374" width="88" height="44" fill="#0369a1" stroke="#dde3ec" stroke-width="1"/>
+<text x="324" y="434" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#0f172a" text-anchor="start">Info</text>
+<text x="324" y="448" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#5f6e85" text-anchor="start">#0369a1</text>
+<rect x="440" y="0" width="440" height="470" fill="#0a0f18" />
+<text x="464" y="36" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#9fb0c6" text-anchor="start">DUNKEL — data-theme=&quot;dark&quot;</text>
+<rect x="464" y="52" width="392" height="118" fill="#151d2e" stroke="#3c4a66" stroke-width="1"/>
+<text x="484" y="84" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#cdd7e6" text-anchor="start">Cloud-Server</text>
+<rect x="484" y="94" width="36" height="1.5" fill="#ed1c24" />
+<text x="484" y="118" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="13" font-weight="400" fill="#9fb0c6" text-anchor="start">Stundengenau abgerechnet, mit Monatsdeckel.</text>
+<rect x="484" y="132" width="112" height="28" fill="#3b82f6" />
+<text x="540" y="150" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">Bestellen</text>
+<rect x="608" y="132" width="90" height="28" fill="#17233f" />
+<text x="653" y="150" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#93c5fd" text-anchor="middle">Details</text>
+<rect x="464" y="190" width="88" height="44" fill="#3b82f6" stroke="#27324a" stroke-width="1"/>
+<text x="464" y="250" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#e6eaf2" text-anchor="start">Primär</text>
+<text x="464" y="264" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8492a8" text-anchor="start">#3b82f6</text>
+<rect x="564" y="190" width="88" height="44" fill="#ed1c24" stroke="#27324a" stroke-width="1"/>
+<text x="564" y="250" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#e6eaf2" text-anchor="start">Marke</text>
+<text x="564" y="264" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8492a8" text-anchor="start">#ed1c24</text>
+<rect x="664" y="190" width="88" height="44" fill="#e6eaf2" stroke="#27324a" stroke-width="1"/>
+<text x="664" y="250" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#e6eaf2" text-anchor="start">Text</text>
+<text x="664" y="264" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8492a8" text-anchor="start">#e6eaf2</text>
+<rect x="764" y="190" width="88" height="44" fill="#9fb0c6" stroke="#27324a" stroke-width="1"/>
+<text x="764" y="250" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#e6eaf2" text-anchor="start">Text gedämpft</text>
+<text x="764" y="264" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8492a8" text-anchor="start">#9fb0c6</text>
+<rect x="464" y="282" width="88" height="44" fill="#0a0f18" stroke="#27324a" stroke-width="1"/>
+<text x="464" y="342" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#e6eaf2" text-anchor="start">Hintergrund</text>
+<text x="464" y="356" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8492a8" text-anchor="start">#0a0f18</text>
+<rect x="564" y="282" width="88" height="44" fill="#151d2e" stroke="#27324a" stroke-width="1"/>
+<text x="564" y="342" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#e6eaf2" text-anchor="start">Fläche</text>
+<text x="564" y="356" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8492a8" text-anchor="start">#151d2e</text>
+<rect x="664" y="282" width="88" height="44" fill="#3c4a66" stroke="#27324a" stroke-width="1"/>
+<text x="664" y="342" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#e6eaf2" text-anchor="start">Rahmen</text>
+<text x="664" y="356" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8492a8" text-anchor="start">#3c4a66</text>
+<rect x="764" y="282" width="88" height="44" fill="#a78bfa" stroke="#27324a" stroke-width="1"/>
+<text x="764" y="342" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#e6eaf2" text-anchor="start">Akzent</text>
+<text x="764" y="356" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8492a8" text-anchor="start">#a78bfa</text>
+<rect x="464" y="374" width="88" height="44" fill="#22c55e" stroke="#27324a" stroke-width="1"/>
+<text x="464" y="434" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#e6eaf2" text-anchor="start">Erfolg</text>
+<text x="464" y="448" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8492a8" text-anchor="start">#22c55e</text>
+<rect x="564" y="374" width="88" height="44" fill="#f59e0b" stroke="#27324a" stroke-width="1"/>
+<text x="564" y="434" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#e6eaf2" text-anchor="start">Warnung</text>
+<text x="564" y="448" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8492a8" text-anchor="start">#f59e0b</text>
+<rect x="664" y="374" width="88" height="44" fill="#ef4444" stroke="#27324a" stroke-width="1"/>
+<text x="664" y="434" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#e6eaf2" text-anchor="start">Gefahr</text>
+<text x="664" y="448" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8492a8" text-anchor="start">#ef4444</text>
+<rect x="764" y="374" width="88" height="44" fill="#38bdf8" stroke="#27324a" stroke-width="1"/>
+<text x="764" y="434" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#e6eaf2" text-anchor="start">Info</text>
+<text x="764" y="448" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8492a8" text-anchor="start">#38bdf8</text>
+</svg>
