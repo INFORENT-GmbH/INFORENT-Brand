@@ -52,6 +52,10 @@ Dunkelmodus: `data-theme="dark"` auf `<html>` setzen, alle Variablen schalten mi
   stehen ausschließlich die drei `:root`-Regeln (`npm run check` prüft das, das Portal auch).
 - Abweichungen eines Verbrauchers (z. B. größere Schriften der Website) gehören in dessen eigenes
   CSS *nach* dem Import — nie hierher.
+- **Eckig:** `--radius-xxs` bis `--radius-xl` sind `0px` — Flächen sind Rechtecke mit sichtbarem
+  Rahmen, die Tiefe kommt vom Rahmen, nicht von Rundung. Nur `--radius-pill` (999px) bleibt rund,
+  für Meter und Schieberegler. Verbraucher setzen **keine eigenen Radien**, sondern nutzen immer
+  `var(--radius-*)` — so folgen Portal und Website automatisch, falls sich das je ändert.
 - Keine Verläufe, `--brand` (#ed1c24) nie als Button-Fläche und nie als Text unter ~24 px.
 
 ## Neue Version veröffentlichen
