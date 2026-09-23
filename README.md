@@ -8,7 +8,10 @@ keiner der beiden definiert Farben selbst.
 | Datei | Inhalt |
 |---|---|
 | `tokens.css` | drei `:root`-Regeln: Geometrie (Abstände, Radien, Schriftgrößen, Schatten, Dauer), helle Palette, dunkle Palette (`:root[data-theme='dark']`) |
+| `base.css` | globale Element-Regeln aller Oberflächen: Fokusrahmen, Formularfelder, Buttons (Hover, deaktiviert), Textauswahl, Scrollbalken, Skip-Link, reduzierte Bewegung — aus dem Portal übernommen |
+| `vars.js` / `vars.d.ts` | jede Variable als typisierte Konstante: `vars.textMuted` = `'var(--text-muted)'` (erzeugt aus `tokens.css`) |
 | `logo.png` | die Wortmarke (200 × 110, dunkle Grafik) |
+| `bin/brand-lint.mjs` | Prüfskript für die Verbraucher (siehe unten) |
 
 <img src="logo.png" alt="INFORENT" width="120">
 
@@ -33,13 +36,21 @@ Das Paket liegt nicht auf npmjs.com, sondern als Anhang am GitHub-Release — ei
 deren Prüfsumme im `package-lock.json` steht:
 
 ```bash
-npm install https://github.com/INFORENT-GmbH/INFORENT-Brand/releases/download/v1.0.0/inforent-brand-1.0.0.tgz
+npm install https://github.com/INFORENT-GmbH/INFORENT-Brand/releases/download/v1.1.0/inforent-brand-1.1.0.tgz
 ```
 
 ```ts
-import '@inforent/brand/tokens.css'   // zuerst — eigene Regeln danach überschreiben per Kaskade
+import '@inforent/brand/tokens.css'   // zuerst — die Werte
+import '@inforent/brand/base.css'     // dann die gemeinsamen Element-Regeln
+import './eigenes.css'                // zuletzt das Projekt-CSS (gewinnt per Kaskade)
+import { vars } from '@inforent/brand/vars'
 import logo from '@inforent/brand/logo.png'
+
+const card = { background: vars.surface, border: `1px solid ${vars.border}`, borderRadius: vars.radiusLg }
 ```
+
+`vars.*` statt Zeichenketten: ein Tippfehler oder eine Variable, die eine neue Brand-Version
+entfernt hat, ist ein **Compile-Fehler** statt eines stumm leeren Werts im Browser.
 
 Dunkelmodus: `data-theme="dark"` auf `<html>` setzen, alle Variablen schalten mit.
 
@@ -58,10 +69,38 @@ Dunkelmodus: `data-theme="dark"` auf `<html>` setzen, alle Variablen schalten mi
   `var(--radius-*)` — so folgen Portal und Website automatisch, falls sich das je ändert.
 - Keine Verläufe, `--brand` (#ed1c24) nie als Button-Fläche und nie als Text unter ~24 px.
 
+## brand-lint — Pflicht in beiden Projekten
+
+Das Paket bringt ein Prüfskript mit, das Portal und Website in ihrer CI laufen lassen. Die Regeln
+sind mit der Brand versioniert: eine neue Regel erreicht beide Projekte mit dem nächsten Update.
+
+```bash
+npx brand-lint site/                                         # Website
+npx brand-lint --baseline brand-lint-baseline.json src …     # Portal (mit Ratsche)
+```
+
+| Regel | findet | stattdessen |
+|---|---|---|
+| `color` | `#hex`, `rgb()`, `hsl()` … im Code | `var(--…)` bzw. `vars.*` |
+| `gradient` | `linear-/radial-/conic-gradient` | — die Brand hat keine Verläufe |
+| `radius` | Eckenradius ≠ 0 als Zahl, eigene Radius-Skala | `var(--radius-*)` / `vars.radius*` (eckig) |
+| `font` | Schriftfamilie als Text | `var(--ui-font)` / `var(--mono-font)` |
+| `font-cdn` | Google Fonts, Typekit … | selbst hosten (`@fontsource`) |
+| `unknown-var` | `var(--x)`, das es weder in der Brand noch im Projekt gibt | Tippfehler beheben / Namen aus der Brand |
+
+Ausgenommen sind die generierten Brand-Kopien (zwischen `BEGIN tokens`/`END tokens` bzw.
+`BEGIN base`/`END base`) und Kommentare. `<meta name="theme-color">` darf einen Hex-Wert tragen,
+wenn er in der Brand vorkommt (dort funktioniert `var()` nicht).
+
+**Begründete Ausnahme:** Kommentar mit `brand-allow: <Grund>` in derselben oder der Zeile darüber.
+
+**Baseline (Ratsche):** `--baseline <datei>` erlaubt die bestehenden Befunde je Datei und Regel,
+nur *mehr* schlägt fehl; `--write-baseline` schreibt den aktuellen Stand fest (auch nach dem Abbau).
+
 ## Neue Version veröffentlichen
 
-1. Änderung per Pull Request, danach `npm run preview` (Vorschaubilder neu); `npm run check` muss
-   grün sein.
+1. Änderung per Pull Request, danach `npm run gen` (vars) und `npm run preview` (Vorschaubilder);
+   `npm run check` muss grün sein.
 2. `version` in `package.json` hochzählen, Eintrag in `CHANGELOG.md`.
 3. Annotierten Tag setzen und pushen — der Tag-Text wird die Release-Notiz:
    ```bash
@@ -70,5 +109,5 @@ Dunkelmodus: `data-theme="dark"` auf `<html>` setzen, alle Variablen schalten mi
    ```
    Die Action `release` baut das Paket und hängt `inforent-brand-1.1.0.tgz` ans Release.
 4. In Portal und Website die URL in `package.json` auf die neue Version setzen und `npm install`.
-   Im Portal danach `npm run tokens:write` in `web/` (schreibt die Werte in `index.html` und die
-   Kopien der Nebenseiten) und committen.
+   Im Portal danach `npm run tokens:write` in `web/` (schreibt `tokens.css` und `base.css` in
+   `index.html` und die Nebenseiten) und committen. `npm run lint` zeigt, ob neue Regeln greifen.

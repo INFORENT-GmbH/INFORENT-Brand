@@ -31,6 +31,16 @@ if (JSON.stringify(selectors) !== JSON.stringify(expected)) {
 }
 if (css.slice(e + END.length).trim() !== '') fail('tokens.css: nach END tokens darf nichts mehr stehen')
 
+// base.css: exactly one BEGIN/END base region, no :root rules (values live in tokens.css).
+const base = readFileSync(new URL('../base.css', import.meta.url), 'utf8')
+const BB = '/* BEGIN base', BE = '/* END base */'
+if (base.split(BB).length !== 2 || base.split(BE).length !== 2 || base.indexOf(BE) < base.indexOf(BB)) fail('base.css: genau ein BEGIN-base- und ein END-base-Marker erwartet')
+if (/:root\s*[\[{]/.test(base.replace(/\/\*[\s\S]*?\*\//g, ''))) fail('base.css: keine :root-Regeln — Werte gehören nach tokens.css')
+const baseVars = [...base.matchAll(/var\((--[a-z0-9-]+)/g)].map(m => m[1])
+const tokenNames = new Set([...css.replace(/\/\*[\s\S]*?\*\//g, '').matchAll(/(--[a-z0-9-]+)\s*:/g)].map(m => m[1]))
+const missing = [...new Set(baseVars.filter(v => !tokenNames.has(v)))]
+if (missing.length) fail(`base.css nutzt Variablen, die tokens.css nicht hat: ${missing.join(', ')}`)
+
 const png = readFileSync(new URL('../logo.png', import.meta.url))
 if (!png.subarray(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]))) fail('logo.png ist kein PNG')
 

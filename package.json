@@ -1,21 +1,34 @@
 {
   "name": "@inforent/brand",
-  "version": "1.0.0",
-  "description": "INFORENT Corporate Identity: Design-Tokens (CSS-Variablen) und Wortmarke — gemeinsame Quelle für Portal und Website",
+  "version": "1.1.0",
+  "description": "INFORENT Corporate Identity: Design-Tokens, Basis-CSS, typisierte Variablennamen, Wortmarke und brand-lint — gemeinsame Quelle für Portal und Website",
   "license": "UNLICENSED",
   "repository": "github:INFORENT-GmbH/INFORENT-Brand",
   "type": "module",
   "files": [
     "tokens.css",
-    "logo.png"
+    "base.css",
+    "vars.js",
+    "vars.d.ts",
+    "logo.png",
+    "bin/brand-lint.mjs"
   ],
   "exports": {
     "./tokens.css": "./tokens.css",
+    "./base.css": "./base.css",
+    "./vars": {
+      "types": "./vars.d.ts",
+      "default": "./vars.js"
+    },
     "./logo.png": "./logo.png",
     "./package.json": "./package.json"
   },
   "scripts": {
-    "check": "node scripts/check.mjs && node scripts/preview.mjs --check",
+    "check": "node scripts/check.mjs && node scripts/gen.mjs --check && node scripts/preview.mjs --check",
+    "gen": "node scripts/gen.mjs",
     "preview": "node scripts/preview.mjs"
+  },
+  "bin": {
+    "brand-lint": "bin/brand-lint.mjs"
   }
 }
