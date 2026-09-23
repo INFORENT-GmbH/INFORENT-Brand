@@ -16,6 +16,9 @@ jobs:
     runs-on: [self-hosted, Linux, shared]
     steps:
       - uses: actions/checkout@v7
+        with:
+          # Annotierte Tags samt Text holen (Release-Notiz).
+          fetch-depth: 0
       - uses: actions/setup-node@v7
         with:
           node-version: 24
@@ -23,6 +26,21 @@ jobs:
         env:
           RELEASE_TAG: ${{ github.ref_name }}
       - run: npm pack
-      - run: gh release create "$GITHUB_REF_NAME" inforent-brand-*.tgz --title "$GITHUB_REF_NAME" --notes-from-tag --verify-tag
-        env:
-          GH_TOKEN: ${{ github.token }}
+      # github-script statt `gh`: auf den self-hosted Runnern ist die gh-CLI nicht
+      # garantiert installiert. Release-Text = Text des annotierten Tags.
+      - uses: actions/github-script@v8
+        with:
+          script: |
+            const fs = require('node:fs')
+            const tag = context.ref.replace('refs/tags/', '')
+            const { execSync } = require('node:child_process')
+            const notes = execSync(`git tag -l --format='%(contents)' ${tag}`).toString().trim()
+            const { data: rel } = await github.rest.repos.createRelease({
+              ...context.repo, tag_name: tag, name: tag, body: notes,
+            })
+            const file = fs.readdirSync('.').find(f => /^inforent-brand-.*\.tgz$/.test(f))
+            await github.rest.repos.uploadReleaseAsset({
+              ...context.repo, release_id: rel.id, name: file,
+              data: fs.readFileSync(file),
+              headers: { 'content-type': 'application/gzip', 'content-length': fs.statSync(file).size },
+            })
