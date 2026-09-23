@@ -1,0 +1,347 @@
+/* INFORENT design tokens — the ONE source of the corporate identity's values.
+ *
+ * Consumed by the portal (INFORENT-Portal: inlined into web/index.html and the
+ * status/gv/apidocs copies by web/scripts/tokens-sync.mjs) and by the website
+ * (INFORENT-Website: imported as-is). Change a value HERE, release a new version,
+ * bump it in both projects — never edit a consumer's copy.
+ *
+ * Contract: the custom-property NAMES are the public API of this package.
+ * Adding a name or moving a value = minor version; renaming or removing a
+ * name = major version (a consumer may still read it). See README.md.
+ */
+/* BEGIN tokens — only :root rules between these markers (geometry, light, dark).
+   The portal's tokens-sync copies this region verbatim and fails if anything
+   else appears in it; global CSS belongs in the consumer, not here. */
+:root {
+  /* The ladder is 2px-based because this UI is dense: the sidebar rail,
+     table controls and badges all live at 2/6/10, not just 4/8/12. */
+  --space-1: 0.0625rem;
+  --space-2: 0.125rem;
+  --space-4: 0.25rem;
+  --space-6: 0.375rem;
+  --space-8: 0.5rem;
+  --space-10: 0.625rem;
+  --space-12: 0.75rem;
+  --space-14: 0.875rem;
+  --space-16: 1rem;
+  --space-20: 1.25rem;
+  --space-24: 1.5rem;
+  --space-32: 2rem;
+
+  /* Radius. The ladder is kept as NAMES (styles-check compares key sets,
+     and the steps still say "how big is this surface"), but the portal
+     draws square: a box is a rectangle with a visible frame, depth comes
+     from the border, not from rounding. Only `pill` stays round — it is
+     the shape of a meter/track, not of a box. */
+  --radius-xxs: 0px;
+  --radius-xs: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-pill: 999px;
+
+  /* Line height. Six steps, because 255 declarations across the app had
+     drifted into SIXTEEN different values (1.05 … 1.8) — the same problem
+     the spacing ladder was written to end, in the one property
+     styles-check.mjs did not yet watch. Each step has a job:
+       flat     the box IS the glyph — an icon button, a badge, a caret
+       display  a big tabular figure (dashboard stat, NOC wallboard)
+       tight    a single line that must not add height (table cell, chip)
+       snug     a two-line caption or tooltip
+       normal   body copy, form labels, table text — the default
+       relaxed  long-form prose: legal documents, help, order steps */
+  --leading-flat: 1;
+  --leading-display: 1.1;
+  --leading-tight: 1.25;
+  --leading-snug: 1.4;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.6;
+
+  /* Motion. `fast` is a state flip the eye should not have to follow
+     (hover, focus, a caret turning), `base` is something moving across
+     the screen (a drawer, a toast), `slow` is a bar filling. All three
+     are overridden to ~0 by the prefers-reduced-motion block below END. */
+  --dur-fast: .12s;
+  --dur-base: .2s;
+  --dur-slow: .3s;
+
+  --font-xxs: 0.6875rem;
+  --font-xs: 0.75rem;
+  --font-sm: 0.8125rem;
+  --font-md: 0.875rem;
+  --font-lg: 1rem;
+  --font-xl: 1.125rem;
+  --font-xxl: 1.25rem;
+
+  /* Font stacks. Named --ui-font / --mono-font, and deliberately NOT
+     "--font-" + "family": scripts/styles-check.mjs scrapes `--font-<key>`
+     declarations out of this file — as TEXT, comments included — and
+     asserts every key it finds is used by the `font` map in
+     styles/tokens.ts. A name on that pattern would register a phantom
+     type step and fail the build. (Which is why the name is spelled in
+     two pieces right here.) Mirrored as `fontFamily` in
+     styles/tokens.ts. */
+  --ui-font: 'Inter', system-ui, sans-serif;
+  --mono-font: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* ---- Design tokens: light (default) ---------------------------------
+   Consumed via var(--x) from styles/tokens.ts. Dark overrides below. */
+:root {
+  color-scheme: light;
+
+  /* Surfaces */
+  --bg: #f4f6fb;
+  --surface: #ffffff;
+  --surface-muted: #f8fafc;
+  --surface-subtle: #fafbfd;
+  --surface-hover: #f1f5f9;
+
+  /* Placeholder blocks while data loads (components/Skeleton.tsx). Its own
+     pair rather than a reuse of --surface-hover: a skeleton has to read as
+     a shape on `--surface`, `--surface-muted` AND inside a modal, which a
+     hover tint is too faint for, and the sweep needs a lighter partner. */
+  --skeleton: #e7ecf3;
+  --skeleton-hi: #f4f7fb;
+
+  /* Borders — the frame IS the depth (no gradients), so each step sits a
+     full notch darker than the hairlines this palette started with. */
+  --border-subtle: #dde3ec;
+  --border: #c3ccda;
+  --border-strong: #94a3b8;
+
+  /* Text */
+  --text-strong: #0b1220;
+  --text: #0f172a;
+  --text-heading: #1e293b;
+  --text-muted: #475569;   /* 7.58 : 1 on --surface */
+  /* soft and subtle were 4.76 and 2.56 against white — subtle failed WCAG
+     AA (4.5) against every surface we paint it on, and it is what every
+     empty state, secondary row line and meta caption uses. Both moved
+     together so the hierarchy still reads as a hierarchy. */
+  --text-soft: #505d73;    /* 6.66 / 6.36 / 6.16 / 6.08 */
+  --text-subtle: #5f6e85;  /* 5.18 / 4.95 / 4.79 / 4.73 — vs surface,
+                              surface-muted, bg, surface-hover */
+
+  /* Primary / blue */
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --primary-strong: #1e40af;
+  --primary-soft: #eff6ff;
+  /* The foreground on any solid fill — primary, danger, success. A token
+     rather than the ~63 `'#fff'` literals it replaces, so a future
+     high-contrast or print palette has one place to change. Theme-
+     invariant on purpose: the fills it sits on are the same in both. */
+  --on-primary: #ffffff;
+  --primary-ring: rgba(37, 99, 235, 0.20);
+
+  /* INFORENT red — the brand MARK colour: the accent rule under the
+     wordmark, eyebrow dots, list markers, the letterhead rule on PDFs.
+     Fixed in both themes (like --bar), so it is not repeated in the dark
+     block. Accent only: never a button fill (reads as an error) and never
+     text below ~24px (4.4:1 on white fails AA) — `--admin` below is its
+     AA-safe UI derivative. The whole palette: docs/areas/brand.md. */
+  --brand: #ed1c24;
+  --brand-soft: rgba(237, 28, 36, 0.16);
+
+  /* Success / green */
+  --success: #16a34a;
+  --success-text: #166534;
+  --success-soft: #dcfce7;
+
+  /* Danger / red */
+  --danger: #dc2626;
+  --danger-text: #991b1b;
+  --danger-soft: #fee2e2;
+  --danger-border: #fca5a5;
+  --danger-ring: rgba(220, 38, 38, 0.20);
+
+  /* Warning / amber */
+  --warning: #d97706;
+  --warning-text: #78350f;
+  --warning-soft: #fef3c7;
+  --warning-bar: #fbbf24;
+  --warning-on-bar: #78350f;   /* text ON the solid amber bar/buttons */
+
+  /* Admin-only marker — violet, the same signal the sidebar uses for
+     admin-only nav entries. Deliberately NOT red: it means "restricted
+     to administrators", and next to `--danger` (destructive) and
+     `--brand` (the mark) a third red was read as a warning.
+     `--admin-tint` is the nav's fill, fixed in both themes like the
+     sidebar it sits on. */
+  --admin: #9333ea;
+  --admin-text: #6b21a8;
+  --admin-soft: #f5e9fd;
+  --admin-border: #d8b4fe;
+  --admin-tint: rgba(192, 132, 252, 0.22);
+
+  /* Accent (violet) / info (cyan) */
+  --accent: #7c3aed;
+  --accent-text: #5b21b6;
+  --accent-soft: #ede9fe;
+  --info: #0369a1;
+  --info-soft: #f0f9ff;
+
+  /* Tag colours (docs/areas/labels.md) — the dot in a tag chip. Stored as
+     the palette NAME, so each theme picks its own step: 600 on light,
+     400 on dark, both clear 3:1 against the chip fill. */
+  --tag-red: #dc2626;
+  --tag-orange: #ea580c;
+  --tag-yellow: #ca8a04;
+  --tag-green: #16a34a;
+  --tag-teal: #0d9488;
+  --tag-blue: #2563eb;
+  --tag-violet: #7c3aed;
+  --tag-pink: #db2777;
+  --tag-gray: #64748b;
+
+  /* Sidebar (dark slate in both themes) */
+  --sidebar: #0f172a;
+  --sidebar-border: #1f2a3d;
+  --sidebar-hover: #263348;
+  --sidebar-item: #94a3b8;
+  --sidebar-item-active: #e2e8f0;
+  --sidebar-section: #475569;
+  --sidebar-active-bg: rgba(37, 99, 235, 0.18);
+  --sidebar-accent: #3b82f6;
+
+  /* Fixed-dark chrome that stays dark in BOTH themes — the bulk-selection
+     action bar and tooltips. Deliberately not overridden below: these are
+     contrast surfaces, like the sidebar, not theme-following ones. They
+     are tokens so the values are named and shared rather than nine loose
+     hexes inlined per component. */
+  --bar: #1e293b;
+  --bar-border: #0f172a;
+  --bar-text: #f1f5f9;
+  --bar-text-muted: #cbd5e1;
+  --bar-btn-border: #334155;
+  --tooltip-bg: #0f172a;
+  --tooltip-text: #f8fafc;
+  --tooltip-border: #1e293b;
+
+  /* Elevation */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 12px 32px rgba(15, 23, 42, 0.14), 0 2px 8px rgba(15, 23, 42, 0.06);
+  /* md, cast upward: a bar pinned to the BOTTOM of a pane (bulk selection,
+     the DNS editor's apply strip) lifts off the content above it, not
+     below. Without this the two such bars each carried their own literal. */
+  --shadow-up: 0 -4px 12px rgba(15, 23, 42, 0.08);
+
+  /* UI chrome */
+  --select-bg: rgba(37, 99, 235, 0.22);
+  --scrollbar-thumb: #cbd5e1;
+  --scrollbar-thumb-hover: #94a3b8;
+  /* Modal scrim. Slate rather than pure black so it reads as "dimmed
+     page", not "hole". Dark mode needs more opacity — a .45 black veil
+     over an already-near-black body is barely visible. */
+  --overlay: rgba(15, 23, 42, 0.45);
+  --overlay-strong: rgba(15, 23, 42, 0.72);
+}
+
+/* ---- Design tokens: dark -------------------------------------------- */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  /* Surfaces */
+  --bg: #0a0f18;
+  --surface: #151d2e;
+  --surface-muted: #1b2438;
+  --surface-subtle: #10192a;
+  /* Darkened a touch so subtle text on a hovered row still clears AA
+     (4.77 instead of 4.41). */
+  --surface-hover: #1d263c;
+
+  --skeleton: #222d45;
+  --skeleton-hi: #2d3b57;
+
+  /* Borders — same notch darker→lighter on dark: frames must read against
+     #0a0f18 without a gradient. */
+  --border-subtle: #27324a;
+  --border: #3c4a66;
+  --border-strong: #55658a;
+
+  /* Text */
+  --text-strong: #f8fafc;
+  --text: #e6eaf2;
+  --text-heading: #cdd7e6;
+  --text-muted: #9fb0c6;   /* 7.62 : 1 on --surface */
+  --text-soft: #93a2b8;    /* 6.50 / 5.97 / 7.40 / 5.81 */
+  --text-subtle: #8492a8;  /* 5.34 / 4.91 / 6.08 / 4.77 — was 3.86, and
+                              only 3.19 on a hovered row */
+
+  /* Primary / blue — brightened for contrast on dark surfaces */
+  --primary: #3b82f6;
+  --primary-hover: #60a5fa;
+  --primary-strong: #93c5fd;
+  --primary-soft: #17233f;
+  --primary-ring: rgba(59, 130, 246, 0.32);
+
+  /* Success / green */
+  --success: #22c55e;
+  --success-text: #4ade80;
+  --success-soft: #14301f;
+
+  /* Danger / red */
+  --danger: #ef4444;
+  --danger-text: #f87171;
+  --danger-soft: #3a1518;
+  --danger-border: #7f2a2a;
+  --danger-ring: rgba(239, 68, 68, 0.32);
+
+  /* Warning / amber */
+  --warning: #f59e0b;
+  --warning-text: #fbbf24;
+  --warning-soft: #3a2c10;
+  --warning-bar: #f59e0b;
+  --warning-on-bar: #231603;   /* text ON the solid amber bar/buttons */
+
+  /* Admin-only marker — the sidebar's admin tint, which is already dark
+     in both themes, so this matches it exactly here. */
+  --admin: #c084fc;
+  --admin-text: #dcb4fd;
+  --admin-soft: #2e1d3f;
+  --admin-border: #6b3f96;
+
+  /* Accent (violet) / info (cyan) */
+  --accent: #a78bfa;
+  --accent-text: #c4b5fd;
+  --accent-soft: #241a3d;
+  --info: #38bdf8;
+  --info-soft: #102438;
+
+  --tag-red: #f87171;
+  --tag-orange: #fb923c;
+  --tag-yellow: #facc15;
+  --tag-green: #4ade80;
+  --tag-teal: #2dd4bf;
+  --tag-blue: #60a5fa;
+  --tag-violet: #a78bfa;
+  --tag-pink: #f472b6;
+  --tag-gray: #94a3b8;
+
+  /* Sidebar — nudged so it reads as a distinct rail against dark content */
+  --sidebar: #0d1524;
+  --sidebar-border: #1f2a3d;
+  --sidebar-hover: #1e2a40;
+  --sidebar-item: #94a3b8;
+  --sidebar-item-active: #e2e8f0;
+  --sidebar-section: #64748b;
+  --sidebar-active-bg: rgba(59, 130, 246, 0.20);
+  --sidebar-accent: #60a5fa;
+
+  /* Elevation — deeper on dark */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.40);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.50), 0 1px 2px rgba(0, 0, 0, 0.40);
+  --shadow-lg: 0 14px 34px rgba(0, 0, 0, 0.60), 0 2px 10px rgba(0, 0, 0, 0.45);
+  --shadow-up: 0 -4px 12px rgba(0, 0, 0, 0.45);
+
+  /* UI chrome */
+  --select-bg: rgba(59, 130, 246, 0.30);
+  --scrollbar-thumb: #3b4863;
+  --scrollbar-thumb-hover: #4b5a75;
+  --overlay: rgba(0, 0, 0, 0.62);
+  --overlay-strong: rgba(0, 0, 0, 0.82);
+}
+/* END tokens */

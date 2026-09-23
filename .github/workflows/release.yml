@@ -1,0 +1,25 @@
+# Ein Tag vX.Y.Z erzeugt ein GitHub-Release mit dem npm-Paket als Anhang.
+# Portal und Website hängen an genau dieser Datei (feste Bytes, Prüfsumme im
+# package-lock) — nicht am Git-Stand und nicht am automatisch erzeugten
+# Quellarchiv, dessen Bytes GitHub nicht garantiert.
+name: release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm run check
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+      - run: npm pack
+      - run: gh release create "$GITHUB_REF_NAME" inforent-brand-*.tgz --title "$GITHUB_REF_NAME" --notes-from-tag --verify-tag
+        env:
+          GH_TOKEN: ${{ github.token }}

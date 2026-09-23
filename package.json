@@ -1,0 +1,17 @@
+{
+  "name": "@inforent/brand",
+  "version": "1.0.0",
+  "description": "INFORENT Corporate Identity: Design-Tokens (CSS-Variablen) und Wortmarke — gemeinsame Quelle für Portal und Website",
+  "license": "UNLICENSED",
+  "repository": "github:INFORENT-GmbH/INFORENT-Brand",
+  "type": "module",
+  "files": ["tokens.css", "logo.png"],
+  "exports": {
+    "./tokens.css": "./tokens.css",
+    "./logo.png": "./logo.png",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "check": "node scripts/check.mjs"
+  }
+}
