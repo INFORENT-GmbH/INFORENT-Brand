@@ -9,7 +9,7 @@ keiner der beiden definiert Farben selbst.
 |---|---|
 | `tokens.css` | drei `:root`-Regeln: Geometrie (Abstände, Radien, Schriftgrößen, Schatten, Dauer), helle Palette, dunkle Palette (`:root[data-theme='dark']`) |
 | `base.css` | globale Element-Regeln aller Oberflächen: Fokusrahmen, Formularfelder, Buttons (Hover, deaktiviert), Textauswahl, Scrollbalken, Skip-Link, reduzierte Bewegung — aus dem Portal übernommen |
-| `vars.js` / `vars.d.ts` | jede Variable als typisierte Konstante: `vars.textMuted` = `'var(--text-muted)'` (erzeugt aus `tokens.css`) |
+| `vars.js` / `vars.d.ts` | jede Variable als typisierte Konstante: `vars.textMuted` = `'var(--text-muted)'`, dazu `values.light` / `values.dark` mit den aufgelösten Werten für Canvas, WebGL und SVG-Attribute (erzeugt aus `tokens.css`) |
 | `logo.png` | die Wortmarke (200 × 110, dunkle Grafik) |
 | `bin/brand-lint.mjs` | Prüfskript für die Verbraucher (siehe unten) |
 
@@ -92,7 +92,9 @@ Ausgenommen sind die generierten Brand-Kopien (zwischen `BEGIN tokens`/`END toke
 `BEGIN base`/`END base`) und Kommentare. `<meta name="theme-color">` darf einen Hex-Wert tragen,
 wenn er in der Brand vorkommt (dort funktioniert `var()` nicht).
 
-**Begründete Ausnahme:** Kommentar mit `brand-allow: <Grund>` in derselben oder der Zeile darüber.
+**Begründete Ausnahme:** Kommentar `brand-allow: <Grund>` in derselben oder der Zeile darüber, oder
+ein Block `brand-allow-start: <Grund>` … `brand-allow-end` (z. B. eine Diagrammpalette für
+Canvas/SVG, eine fremde Marke). Ohne Grund zählt die Markierung nicht.
 
 **Baseline (Ratsche):** `--baseline <datei>` erlaubt die bestehenden Befunde je Datei und Regel,
 nur *mehr* schlägt fehl; `--write-baseline` schreibt den aktuellen Stand fest (auch nach dem Abbau).

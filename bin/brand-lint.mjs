@@ -21,8 +21,10 @@
 //   unknown-var  var(--x) where --x is neither a brand variable nor declared in
 //                the scanned sources — a typo or a variable a new version removed
 //
-// A justified exception is marked in the source: a comment containing
-// `brand-allow` on the same line or the line directly above, with the reason.
+// A justified exception is marked in the source with its reason: a comment
+// `brand-allow: <reason>` on the same line or the line directly above, or a block
+// `brand-allow-start: <reason>` … `brand-allow-end` (a chart palette, a canvas
+// drawing, a third-party mark). Without a reason the marker does not count.
 // Regions between `BEGIN tokens`/`END tokens` and `BEGIN base`/`END base`
 // markers are generated copies of the brand and are skipped.
 
@@ -139,7 +141,7 @@ const RULES = [
     re: /\bfont-family\s*:\s*([^;}\n]+)|\bfontFamily\s*:\s*(['"`][^'"`]*['"`])/g,
     test: m => {
       const v = (m[1] ?? m[2]).trim().replace(/^['"`]|['"`]$/g, '')
-      return !/^(var\(--(ui|mono)-font\)|inherit|initial|unset|revert)/.test(v)
+      return !/^(var\(--(ui|mono)-font\s*[,)]|inherit|initial|unset|revert)/.test(v)
     },
     msg: 'Schriftfamilie direkt im Code — var(--ui-font) / var(--mono-font) nutzen',
   },
@@ -166,7 +168,16 @@ for (const f of files) {
   const lineStarts = [0]
   for (let i = 0; i < clean.length; i++) if (clean[i] === '\n') lineStarts.push(i + 1)
   const lineOf = idx => { let lo = 0, hi = lineStarts.length - 1; while (lo < hi) { const mid = (lo + hi + 1) >> 1; if (lineStarts[mid] <= idx) lo = mid; else hi = mid - 1 } return lo }
-  const allowed = l => /brand-allow/.test(rawLines[l] ?? '') || /brand-allow/.test(rawLines[l - 1] ?? '')
+  // Exceptions need a reason: `brand-allow: <reason>` on the line or the line
+  // above, or a block `brand-allow-start: <reason>` … `brand-allow-end`.
+  const ALLOW = /brand-allow:\s*\S/
+  const inBlock = new Set()
+  for (let i = 0, open = false; i < rawLines.length; i++) {
+    if (/brand-allow-start:\s*\S/.test(rawLines[i])) open = true
+    if (open) inBlock.add(i)
+    if (/brand-allow-end/.test(rawLines[i])) open = false
+  }
+  const allowed = l => inBlock.has(l) || ALLOW.test(rawLines[l] ?? '') || ALLOW.test(rawLines[l - 1] ?? '')
   for (const rule of RULES) {
     const text = rule.raw ? raw : clean
     for (const m of text.matchAll(rule.re)) {

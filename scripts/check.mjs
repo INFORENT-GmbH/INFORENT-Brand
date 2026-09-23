@@ -48,5 +48,9 @@ const { version } = JSON.parse(readFileSync(new URL('../package.json', import.me
 const tag = process.env.RELEASE_TAG
 if (tag && tag !== `v${version}`) fail(`Tag ${tag} passt nicht zu package.json-Version ${version}`)
 
+// vars.js must load and agree with tokens.css (a quoting bug once broke it).
+const mod = await import(new URL('../vars.js', import.meta.url))
+if (Object.keys(mod.vars).length !== Object.keys(mod.values.light).length) fail('vars.js: vars und values passen nicht zusammen')
+
 const names = new Set(css.match(/--[a-z0-9-]+(?=\s*:)/g))
 console.log(`brand check: ok (${names.size} Variablen, Version ${version})`)

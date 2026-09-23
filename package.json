@@ -1,6 +1,6 @@
 {
   "name": "@inforent/brand",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "INFORENT Corporate Identity: Design-Tokens, Basis-CSS, typisierte Variablennamen, Wortmarke und brand-lint — gemeinsame Quelle für Portal und Website",
   "license": "UNLICENSED",
   "repository": "github:INFORENT-GmbH/INFORENT-Brand",
