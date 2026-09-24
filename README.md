@@ -27,6 +27,13 @@ keiner der beiden definiert Farben selbst.
 Die Bilder erzeugt `npm run preview` aus `tokens.css`; `npm run check` schlägt fehl, wenn sie nicht
 mehr passen.
 
+**Styleguide für Menschen:** [brand.inforent.com](https://brand.inforent.com) — Farben mit Rolle,
+Schrift, Wortmarke, Raster und Regeln, hell und dunkel. Erzeugt `npm run site` aus `tokens.css`
+(`site-dist/`, nicht eingecheckt); die Action `site` baut und lädt bei jedem Push auf `main` und
+jedem Tag per SFTP hoch (Secrets `SFTP_HOST`, `SFTP_PORT`, `SFTP_USER`, `SFTP_PASSWORD`, Kopf von
+`.github/workflows/site.yml`). Die Seite ist keine Einbinde-Adresse — Projekte beziehen das Paket
+über das Release.
+
 Bedeutung und Regeln der Werte (wann `--brand`, wann `--primary`, Kontraste, Schriften):
 `docs/areas/brand.md` im Portal-Repo.
 

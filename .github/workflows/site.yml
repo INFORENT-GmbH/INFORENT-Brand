@@ -1,0 +1,45 @@
+# Baut den Styleguide (scripts/site.mjs) und spiegelt ihn per SFTP nach
+# brand.inforent.com auf dem INFORENT-Webspace (scripts/deploy-sftp.mjs).
+#
+# Repository-Secrets (Settings → Secrets and variables → Actions):
+#   SFTP_HOST, SFTP_PORT, SFTP_USER   Zugang des Webhosting-Kontos von brand.inforent.com
+#   SFTP_PASSWORD                     dessen Passwort
+#
+# Ohne Passwort läuft der Build trotzdem, nur der Upload wird übersprungen.
+# Nur Pushes auf main und Tags (Org-Mitglieder) — Pull Requests aus Forks
+# erreichen diesen Workflow nicht und sehen die Secrets nie.
+name: site
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+concurrency:
+  group: site
+  cancel-in-progress: false
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+jobs:
+  deploy:
+    runs-on: [self-hosted, Linux, shared]
+    steps:
+      - run: |
+          { echo "TMPDIR=$RUNNER_TEMP"; echo "TMP=$RUNNER_TEMP"; echo "TEMP=$RUNNER_TEMP"; } >> "$GITHUB_ENV"
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - run: npm ci
+      - run: npm run site
+      - name: Upload per SFTP
+        env:
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}
+          SFTP_PORT: ${{ secrets.SFTP_PORT }}
+          SFTP_USER: ${{ secrets.SFTP_USER }}
+          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+        run: |
+          if [ -z "$SFTP_PASSWORD" ]; then
+            echo "::warning::SFTP_PASSWORD fehlt — Upload übersprungen (siehe Kopf von site.yml)."
+            exit 0
+          fi
+          node scripts/deploy-sftp.mjs

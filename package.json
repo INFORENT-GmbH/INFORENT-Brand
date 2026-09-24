@@ -26,9 +26,16 @@
   "scripts": {
     "check": "node scripts/check.mjs && node scripts/gen.mjs --check && node scripts/preview.mjs --check",
     "gen": "node scripts/gen.mjs",
-    "preview": "node scripts/preview.mjs"
+    "preview": "node scripts/preview.mjs",
+    "site": "node scripts/site.mjs",
+    "deploy": "node scripts/deploy-sftp.mjs"
   },
   "bin": {
     "brand-lint": "bin/brand-lint.mjs"
+  },
+  "devDependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "ssh2-sftp-client": "^12.1.1"
   }
 }
