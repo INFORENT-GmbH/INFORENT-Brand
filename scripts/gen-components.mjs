@@ -45,6 +45,8 @@ const css = [
   ...Object.entries(button.variants).map(([k, o]) => rule(`.ir-btn--${variantName(k)}`, o)),
   '/* Auf der dunklen Aktionsleiste. Die Klasse setzt der Baustein, nicht ein\n   Nachfahren-Selektor — ein Dialog, den die Leiste öffnet, bleibt hell. */',
   ...Object.entries(button.onBar).map(([k, o]) => rule(`.ir-btn--on-bar.ir-btn--${variantName(k)}`, o)),
+  '/* Ein Link im Knopf-Look bekommt dieselbe Rückmeldung wie <button> in base.css. */',
+  'a.ir-btn:hover {\n  filter: brightness(0.94);\n}\na.ir-btn:active {\n  filter: brightness(0.88);\n}',
   '/* Läuft (Spinner vor der Beschriftung): gesperrt, aber nicht ausgegraut. */',
   '.ir-btn[aria-busy="true"]:disabled {\n  filter: none;\n  cursor: progress;\n}',
   '',

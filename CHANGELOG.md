@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.1 — 2026-09-25
+
+- `components.css`: Hover/aktiv auch für Links im Knopf-Look (`a.ir-btn`) — `base.css` deckt nur `<button>` ab.
+
 ## 1.3.0 — 2026-09-25
 
 - **Baustein-Optik:** `components.css` (Klassen `ir-btn`, `ir-input`, `ir-badge`, `ir-alert`,

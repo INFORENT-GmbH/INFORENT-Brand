@@ -95,6 +95,13 @@
   color: var(--bar-text);
   border: 1px solid var(--danger);
 }
+/* Ein Link im Knopf-Look bekommt dieselbe Rückmeldung wie <button> in base.css. */
+a.ir-btn:hover {
+  filter: brightness(0.94);
+}
+a.ir-btn:active {
+  filter: brightness(0.88);
+}
 /* Läuft (Spinner vor der Beschriftung): gesperrt, aber nicht ausgegraut. */
 .ir-btn[aria-busy="true"]:disabled {
   filter: none;
