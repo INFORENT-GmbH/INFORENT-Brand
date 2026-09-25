@@ -1,7 +1,7 @@
 {
   "name": "@inforent/brand",
-  "version": "1.2.0",
-  "description": "INFORENT Corporate Identity: Design-Tokens, Basis-CSS, typisierte Variablennamen, Wortmarke und brand-lint — gemeinsame Quelle für Portal und Website",
+  "version": "1.3.0",
+  "description": "INFORENT Corporate Identity: Design-Tokens, Basis-CSS, Baustein-Optik (components.css/.js), typisierte Variablennamen, Wortmarke und brand-lint — gemeinsame Quelle für Portal und Website",
   "license": "UNLICENSED",
   "repository": "github:INFORENT-GmbH/INFORENT-Brand",
   "type": "module",
@@ -9,6 +9,9 @@
     "tokens.css",
     "base.css",
     "vars.js",
+    "components.d.ts",
+    "components.js",
+    "components.css",
     "vars.d.ts",
     "logo.png",
     "bin/brand-lint.mjs"
@@ -16,16 +19,21 @@
   "exports": {
     "./tokens.css": "./tokens.css",
     "./base.css": "./base.css",
+    "./components.css": "./components.css",
     "./vars": {
       "types": "./vars.d.ts",
       "default": "./vars.js"
+    },
+    "./components": {
+      "types": "./components.d.ts",
+      "default": "./components.js"
     },
     "./logo.png": "./logo.png",
     "./package.json": "./package.json"
   },
   "scripts": {
-    "check": "node scripts/check.mjs && node scripts/gen.mjs --check && node scripts/preview.mjs --check",
-    "gen": "node scripts/gen.mjs",
+    "check": "node scripts/check.mjs && node scripts/gen.mjs --check && node scripts/gen-components.mjs --check && node scripts/preview.mjs --check",
+    "gen": "node scripts/gen.mjs && node scripts/gen-components.mjs",
     "preview": "node scripts/preview.mjs",
     "site": "node scripts/site.mjs",
     "deploy": "node scripts/deploy-sftp.mjs"

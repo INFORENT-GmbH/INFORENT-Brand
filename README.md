@@ -10,6 +10,7 @@ keiner der beiden definiert Farben selbst.
 | `tokens.css` | drei `:root`-Regeln: Geometrie (Abstände, Radien, Schriftgrößen, Schatten, Dauer), helle Palette, dunkle Palette (`:root[data-theme='dark']`) |
 | `base.css` | globale Element-Regeln aller Oberflächen: Fokusrahmen, Formularfelder, Buttons (Hover, deaktiviert), Textauswahl, Scrollbalken, Skip-Link, reduzierte Bewegung — aus dem Portal übernommen |
 | `vars.js` / `vars.d.ts` | jede Variable als typisierte Konstante: `vars.textMuted` = `'var(--text-muted)'`, dazu `values.light` / `values.dark` mit den aufgelösten Werten für Canvas, WebGL und SVG-Attribute (erzeugt aus `tokens.css`) |
+| `components.css` / `components.js` | die Optik der Bausteine — Knopf, Feld, Abzeichen, Hinweis, Karte, Fläche, Aktionsleiste — als Klassen (`ir-*`) und als typisierte Stilobjekte; beides aus `components.def.mjs` erzeugt |
 | `logo.png` | die Wortmarke (200 × 110, dunkle Grafik) |
 | `bin/brand-lint.mjs` | Prüfskript für die Verbraucher (siehe unten) |
 
@@ -66,8 +67,10 @@ Dunkelmodus: `data-theme="dark"` auf `<html>` setzen, alle Variablen schalten mi
 - **Die Variablennamen sind die Schnittstelle.** Neuer Name oder geänderter Wert → Minor
   (`1.1.0`); Name umbenannt oder entfernt → Major (`2.0.0`), weil ein Verbraucher ihn noch lesen
   kann.
-- **Nur Werte, keine Komponenten, kein globales CSS.** Zwischen `BEGIN tokens` und `END tokens`
+- **Werte, Grundregeln, Baustein-Optik — kein Verhalten.** Zwischen `BEGIN tokens` und `END tokens`
   stehen ausschließlich die drei `:root`-Regeln (`npm run check` prüft das, das Portal auch).
+  `components.css` ist opt-in und nur Klassen mit Präfix `ir-`; React-Komponenten, Dialog-Fokus
+  und Routing bleiben im jeweiligen Projekt.
 - Abweichungen eines Verbrauchers (z. B. größere Schriften der Website) gehören in dessen eigenes
   CSS *nach* dem Import — nie hierher.
 - **Eckig:** `--radius-xxs` bis `--radius-xl` sind `0px` — Flächen sind Rechtecke mit sichtbarem
@@ -75,6 +78,36 @@ Dunkelmodus: `data-theme="dark"` auf `<html>` setzen, alle Variablen schalten mi
   für Meter und Schieberegler. Verbraucher setzen **keine eigenen Radien**, sondern nutzen immer
   `var(--radius-*)` — so folgen Portal und Website automatisch, falls sich das je ändert.
 - Keine Verläufe, `--brand` (#ed1c24) nie als Button-Fläche und nie als Text unter ~24 px.
+
+## Bausteine
+
+Die Optik der gemeinsamen Bausteine, damit ein Knopf auf der Website aussieht wie im Portal.
+Vorschau aller Varianten: [brand.inforent.com](https://brand.inforent.com/#bausteine).
+
+```html
+<button class="ir-btn ir-btn--md ir-btn--primary">Speichern</button>
+<a class="ir-btn ir-btn--md" href="/kontakt">Kontakt</a>
+<input class="ir-input" placeholder="Hostname">
+<span class="ir-badge ir-badge--md ir-badge--success">Läuft</span>
+<div class="ir-alert ir-alert--info">Hinweis</div>
+```
+
+```ts
+import '@inforent/brand/components.css'                       // Klassen
+import { button, input, badge } from '@inforent/brand/components' // oder als Stilobjekte (React)
+const style = { ...button.base, ...button.sizes.md, ...button.variants.primary }
+```
+
+| Baustein | Klassen | Regel |
+|---|---|---|
+| Knopf | `ir-btn` + `--xs`/`--sm`/`--md` + `--primary`/`--secondary`/`--ghost`/`--danger`/`--danger-outline`/`--admin` | Hauptaktion `primary` (eine je Maske, ganz rechts), Abbrechen `secondary` links daneben, Löschen `danger-outline` (gefüllt nur im Bestätigungsdialog), Umschalten `secondary`, `ghost` für Drittaktionen im Inhalt, `admin` nur für Neben-Aktionen. Eine Leiste, eine Höhe. |
+| Feld | `ir-input` (+ `--sm`/`--lg`, `--mono`, `--admin`, `ir-textarea`); `aria-invalid="true"`, `readonly` | Höhe = `--control-height`, gleich Knopf `md` und Auswahlliste |
+| Abzeichen | `ir-badge` + `--sm`/`--md` + Ton (`--neutral`/`--primary`/`--success`/`--danger`/`--warning`/`--info`/`--accent`), optional `--solid`/`--outline` | Farbe nie allein — immer mit Wort |
+| Hinweis | `ir-alert` + `--error`/`--warning`/`--success`/`--info` | |
+| Fläche | `ir-card` (`--admin`), `ir-panel` + `--plain`/`--muted`/`--inset`, `--pad` | |
+| Aktionsleiste | `ir-action-bar`; Knöpfe darin zusätzlich `ir-btn--on-bar` | Anzahl links, Aktionen rechts, „Auswahl aufheben“ zuletzt |
+
+Hover, Fokus und gesperrt kommen aus `base.css` — beide Dateien laden.
 
 ## brand-lint — Pflicht in beiden Projekten
 

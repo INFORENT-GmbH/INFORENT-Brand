@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.3.0 — 2026-09-25
+
+- **Baustein-Optik:** `components.css` (Klassen `ir-btn`, `ir-input`, `ir-badge`, `ir-alert`,
+  `ir-card`, `ir-panel`, `ir-action-bar`) und `@inforent/brand/components` (dieselben Stile als
+  typisierte Objekte für Inline-Styles). Beides erzeugt `npm run gen` aus EINER Definition,
+  `components.def.mjs` — übernommen 1:1 aus dem Portal. Sechs Knopf-Varianten, drei Größen,
+  eine Feldhöhe (`--control-height`), sieben Badge-Töne, vier Hinweis-Töne.
+
 ## 1.2.0 — 2026-09-23
 
 - `values.light` / `values.dark` in `@inforent/brand/vars`: die aufgelösten Werte je Theme für

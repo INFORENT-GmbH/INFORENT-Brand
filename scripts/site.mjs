@@ -123,12 +123,44 @@ const body = [
     <h3>Bewegung</h3><table class="grid"><tbody>${motion}</tbody></table>
     <p class="note">Kurz (${esc(light['--dur-fast'])}) für einen Zustandswechsel, mittel für etwas, das über den Schirm fährt, lang für einen Balken, der sich füllt. „Bewegung reduzieren“ im Betriebssystem schaltet alles ab.</p>`),
 
+  section('bausteine', 'Bausteine', 'Die Optik der gemeinsamen Bausteine aus <code>components.css</code> — dieselbe Definition, die das Portal als Stilobjekte nutzt. Die Regel steht neben jeder Gruppe.', `
+    <h3>Knöpfe</h3>
+    <p class="note">Hauptaktion <code>primary</code>, eine je Maske, ganz rechts · Abbrechen <code>secondary</code> links daneben · Löschen <code>danger-outline</code>, gefüllt nur im Bestätigungsdialog · <code>ghost</code> für Drittaktionen im Inhalt · <code>admin</code> nur für Neben-Aktionen, die allein Admins sehen.</p>
+    ${['md', 'sm', 'xs'].map(sz => `<div class="row"><span class="meta">${sz}</span>${['primary', 'secondary', 'ghost', 'danger', 'danger-outline', 'admin'].map(v => `<button type="button" class="ir-btn ir-btn--${sz} ir-btn--${v}">${v}</button>`).join('')}</div>`).join('')}
+    <div class="row"><span class="meta"></span><button type="button" class="ir-btn ir-btn--md ir-btn--primary" disabled>gesperrt</button><button type="button" class="ir-btn ir-btn--md" disabled>gesperrt</button><a class="ir-btn ir-btn--md" href="#bausteine">Link im Knopf-Look</a></div>
+    <h3>Felder</h3>
+    <p class="note">Eine Höhe für Feld, Auswahlliste und Knopf <code>md</code> (<code>--control-height</code>). Beschriftung über dem Feld.</p>
+    <div class="fields">
+      <label>Hostname<input class="ir-input" value="web-01"></label>
+      <label>IP-Adresse<input class="ir-input ir-input--mono" value="2a0e:6a80::1"></label>
+      <label>Abgelehnt<input class="ir-input" aria-invalid="true" value="web 01"></label>
+      <label>Nur lesbar<input class="ir-input" readonly value="kunde-4711"></label>
+      <label><span class="admin-label">Nur Admins</span><input class="ir-input ir-input--admin"></label>
+      <label>Klein<input class="ir-input ir-input--sm" value="kompakt"></label>
+    </div>
+    <div class="row"><button type="button" class="ir-btn ir-btn--md">Abbrechen</button><input class="ir-input" placeholder="Suche…" style="width:200px"><button type="button" class="ir-btn ir-btn--md ir-btn--primary">Speichern</button><span class="note">— eine Leiste, eine Höhe</span></div>
+    <h3>Abzeichen</h3>
+    ${['', 'solid', 'outline'].map(vr => `<div class="row"><span class="meta">${vr || 'soft'}</span>${['neutral', 'primary', 'success', 'danger', 'warning', 'info', 'accent'].map(t => `<span class="ir-badge ir-badge--md ir-badge--${t}${vr ? ` ir-badge--${vr}` : ''}">${t}</span>`).join('')}</div>`).join('')}
+    <h3>Hinweise</h3>
+    <div class="stack">${[['error', 'Das hat nicht geklappt. Bitte erneut versuchen.'], ['warning', 'Die Domain läuft in 7 Tagen ab.'], ['success', 'Gespeichert.'], ['info', 'Änderungen werden nach dem nächsten Lauf sichtbar.']].map(([t, x]) => `<div class="ir-alert ir-alert--${t}">${x}</div>`).join('')}</div>
+    <h3>Flächen</h3>
+    <div class="cols">
+      <div class="ir-card"><strong>Karte</strong><p class="note">Überschrift, Rahmen, leichter Schatten.</p></div>
+      <div class="ir-card ir-card--admin"><strong>Karte, nur Admins</strong><p class="note">Rahmen in Admin-Violett.</p></div>
+      <div class="ir-panel ir-panel--plain ir-panel--pad">Fläche plain</div>
+      <div class="ir-panel ir-panel--muted ir-panel--pad">Fläche muted</div>
+      <div class="ir-panel ir-panel--inset ir-panel--pad">Fläche inset</div>
+    </div>
+    <h3>Aktionsleiste</h3>
+    <p class="note">Erscheint unten, sobald Zeilen ausgewählt sind: Anzahl links, Aktionen rechts, „Auswahl aufheben“ zuletzt.</p>
+    <div class="ir-action-bar"><strong style="margin-right:auto">3 ausgewählt</strong><button type="button" class="ir-btn ir-btn--sm ir-btn--on-bar ir-btn--secondary">Bearbeiten</button><button type="button" class="ir-btn ir-btn--sm ir-btn--on-bar ir-btn--danger-outline">Löschen</button><button type="button" class="ir-btn ir-btn--sm ir-btn--primary">Aktionen ▸</button><button type="button" class="ir-btn ir-btn--sm ir-btn--on-bar ir-btn--ghost">Auswahl aufheben</button></div>`),
+
   section('beispiel', 'Zusammengesetzt', 'So greifen die Werte ineinander — Karte, Überschrift, Feld, Hauptaktion, Nebenaktion.', `
-    <div class="demo">
+    <div class="demo ir-card">
       <h3>Cloud-Server bestellen</h3>
       <p class="muted">Stundengenau abgerechnet, mit Monatsdeckel.</p>
-      <label>Hostname<input value="web-01" aria-label="Hostname"></label>
-      <div class="actions"><button type="button" class="btn">Abbrechen</button><button type="button" class="btn primary">Bestellen</button></div>
+      <label>Hostname<input class="ir-input" value="web-01"></label>
+      <div class="actions"><button type="button" class="ir-btn ir-btn--md">Abbrechen</button><button type="button" class="ir-btn ir-btn--md ir-btn--primary">Bestellen</button></div>
     </div>`),
 
   section('ton', 'Sprache', 'Sachlich, kurz, direkt. Deutsch ist die Ausgangssprache, Englisch spiegelt sie.', `
@@ -150,6 +182,7 @@ const html = `<!doctype html>
 <link rel="icon" href="assets/logo.png">
 <link rel="stylesheet" href="assets/tokens.css">
 <link rel="stylesheet" href="assets/base.css">
+<link rel="stylesheet" href="assets/components.css">
 <style>
 @font-face { font-family: 'Inter'; font-weight: 400; font-display: swap; src: url(assets/fonts/inter-400.woff2) format('woff2'); }
 @font-face { font-family: 'Inter'; font-weight: 500; font-display: swap; src: url(assets/fonts/inter-500.woff2) format('woff2'); }
@@ -201,15 +234,19 @@ details summary { cursor: pointer; color: var(--primary); font-size: var(--font-
 .box { width: 132px; height: 72px; display: grid; place-items: center; text-align: center; background: var(--surface); border: 1px solid var(--border-strong); font-size: var(--font-xs); }
 .shadowbox { border-color: var(--border-subtle); }
 .weights p { margin: var(--space-4) 0; font-size: var(--font-xl); }
-.demo { max-width: 420px; border: 1px solid var(--border); background: var(--surface); padding: var(--space-20); box-shadow: var(--shadow-sm); }
+.demo { max-width: 420px; }
 .demo h3 { margin: 0; }
 .demo p { margin: var(--space-4) 0 var(--space-16); }
 .demo label { display: grid; gap: var(--space-6); font-size: var(--font-md); font-weight: 500; color: var(--text-heading); }
-.demo input { padding: var(--space-8) var(--space-10); border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: var(--font-md); }
 .actions { display: flex; justify-content: flex-end; gap: var(--space-8); margin-top: var(--space-16); }
-.btn { padding: var(--space-8) var(--space-14); font-size: var(--font-sm); font-weight: 500; border: 1px solid var(--border); background: var(--surface); color: var(--text-heading); cursor: pointer; }
-.btn.primary { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
 .theme { font: inherit; font-size: var(--font-sm); padding: var(--space-4) var(--space-10); border: 1px solid var(--border); background: var(--surface); color: var(--text-heading); cursor: pointer; }
+.row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-8); margin: var(--space-8) 0; }
+.row .meta { width: 4em; }
+.fields { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--space-12); margin-bottom: var(--space-8); }
+.fields label { display: grid; gap: var(--space-6); font-size: var(--font-md); font-weight: 500; color: var(--text-heading); }
+.admin-label { color: var(--admin-text); }
+.stack { display: grid; gap: var(--space-8); }
+.cols { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: var(--space-12); }
 footer { color: var(--text-subtle); font-size: var(--font-sm); padding: var(--space-8) 0 var(--space-32); }
 @media (max-width: 640px) { section { padding: var(--space-16); } header.top nav a { display: none; } }
 </style>
@@ -223,7 +260,7 @@ footer { color: var(--text-subtle); font-size: var(--font-sm); padding: var(--sp
 </div></header>
 <main class="wrap">
 <nav class="toc" aria-label="Inhalt">
-  <a href="#grundsaetze">Grundsätze</a><a href="#logo">Wortmarke</a><a href="#farben">Farben</a><a href="#schrift">Schrift</a><a href="#raster">Abstände, Ecken, Schatten</a><a href="#beispiel">Zusammengesetzt</a><a href="#ton">Sprache</a>
+  <a href="#grundsaetze">Grundsätze</a><a href="#logo">Wortmarke</a><a href="#farben">Farben</a><a href="#schrift">Schrift</a><a href="#raster">Abstände, Ecken, Schatten</a><a href="#bausteine">Bausteine</a><a href="#beispiel">Zusammengesetzt</a><a href="#ton">Sprache</a>
 </nav>
 ${body}
 <footer>Erzeugt aus ${code('tokens.css')} von ${code(`@inforent/brand ${pkg.version}`)}. © INFORENT GmbH</footer>
@@ -247,7 +284,7 @@ ${body}
 rmSync(out, { recursive: true, force: true })
 mkdirSync(new URL('assets/fonts/', out), { recursive: true })
 writeFileSync(new URL('index.html', out), html)
-for (const f of ['tokens.css', 'base.css', 'logo.png']) copyFileSync(new URL(f, root), new URL(`assets/${f}`, out))
+for (const f of ['tokens.css', 'base.css', 'components.css', 'logo.png']) copyFileSync(new URL(f, root), new URL(`assets/${f}`, out))
 const fonts = new URL('node_modules/@fontsource/', root)
 for (const w of [400, 500, 600, 700]) copyFileSync(new URL(`inter/files/inter-latin-${w}-normal.woff2`, fonts), new URL(`assets/fonts/inter-${w}.woff2`, out))
 copyFileSync(new URL('jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2', fonts), new URL('assets/fonts/mono-400.woff2', out))
