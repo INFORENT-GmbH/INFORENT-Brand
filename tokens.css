@@ -28,17 +28,19 @@
   --space-24: 1.5rem;
   --space-32: 2rem;
 
-  /* Radius. The ladder is kept as NAMES (styles-check compares key sets,
-     and the steps still say "how big is this surface"), but the portal
-     draws square: a box is a rectangle with a visible frame, depth comes
-     from the border, not from rounding. Only `pill` stays round — it is
-     the shape of a meter/track, not of a box. */
-  --radius-xxs: 0px;
-  --radius-xs: 0px;
-  --radius-sm: 0px;
-  --radius-md: 0px;
-  --radius-lg: 0px;
-  --radius-xl: 0px;
+  /* Radius. Seven named steps, soft since 1.4.0 (Portal-Redesign 2026,
+     INFORENT-Portal docs/areas/portal-redesign.md): a box is a surface with
+     a hairline and a small shadow, not a framed rectangle. xxs = micro
+     marks (legend swatches, 4px tracks), xs = dense rail controls, sm/md =
+     controls and fields, lg = cards and panels, xl = dialogs and hero
+     plates, pill = meters, chips, dots. Consumers never pick numbers —
+     the step says what kind of surface it is. */
+  --radius-xxs: 2px;
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
   --radius-pill: 999px;
 
   /* Line height. Six steps, because 255 declarations across the app had
@@ -73,6 +75,10 @@
   --font-lg: 1rem;
   --font-xl: 1.125rem;
   --font-xxl: 1.25rem;
+  /* Display steps (1.4.0): the page title of a customer page and the big
+     figure of a stat tile — above the UI ramp, never for running text. */
+  --font-display: 1.5rem;
+  --font-stat: 1.75rem;
 
   /* Font stacks. Named --ui-font / --mono-font, and deliberately NOT
      "--font-" + "family": scripts/styles-check.mjs scrapes `--font-<key>`
@@ -92,7 +98,7 @@
   color-scheme: light;
 
   /* Surfaces */
-  --bg: #f4f6fb;
+  --bg: #f5f7fa;
   --surface: #ffffff;
   --surface-muted: #f8fafc;
   --surface-subtle: #fafbfd;
@@ -105,10 +111,11 @@
   --skeleton: #e7ecf3;
   --skeleton-hi: #f4f7fb;
 
-  /* Borders — the frame IS the depth (no gradients), so each step sits a
-     full notch darker than the hairlines this palette started with. */
-  --border-subtle: #dde3ec;
-  --border: #c3ccda;
+  /* Borders — hairlines since 1.4.0: depth is the hairline PLUS --shadow-sm
+     (no gradients). `strong` keeps its weight for hover and for rules that
+     must stand alone (PDF tables, focus-less controls). */
+  --border-subtle: #eceff3;
+  --border: #e2e7ee;
   --border-strong: #94a3b8;
 
   /* Text */
@@ -196,15 +203,17 @@
   --tag-pink: #db2777;
   --tag-gray: #64748b;
 
-  /* Sidebar (dark slate in both themes) */
-  --sidebar: #0f172a;
-  --sidebar-border: #1f2a3d;
-  --sidebar-hover: #263348;
-  --sidebar-item: #94a3b8;
-  --sidebar-item-active: #e2e8f0;
-  --sidebar-section: #475569;
-  --sidebar-active-bg: rgba(37, 99, 235, 0.18);
-  --sidebar-accent: #3b82f6;
+  /* Sidebar — a surface of the theme since 1.4.0 (was dark slate in both
+     themes): white rail, hairline, soft-primary active entry. The names stay
+     because the skins override them. */
+  --sidebar: #ffffff;
+  --sidebar-border: #e2e7ee;
+  --sidebar-hover: #f3f5f8;
+  --sidebar-item: #4b5563;        /* 7.56 : 1 on the rail */
+  --sidebar-item-active: #1e40af;
+  --sidebar-section: #5f6e85;     /* 5.18 : 1 */
+  --sidebar-active-bg: #eff6ff;
+  --sidebar-accent: #2563eb;
 
   /* Fixed-dark chrome that stays dark in BOTH themes — the bulk-selection
      action bar and tooltips. Deliberately not overridden below: these are
@@ -321,14 +330,14 @@
   --tag-pink: #f472b6;
   --tag-gray: #94a3b8;
 
-  /* Sidebar — nudged so it reads as a distinct rail against dark content */
-  --sidebar: #0d1524;
-  --sidebar-border: #1f2a3d;
-  --sidebar-hover: #1e2a40;
-  --sidebar-item: #94a3b8;
-  --sidebar-item-active: #e2e8f0;
-  --sidebar-section: #64748b;
-  --sidebar-active-bg: rgba(59, 130, 246, 0.20);
+  /* Sidebar — the dark surface, one hairline from the content */
+  --sidebar: #151d2e;
+  --sidebar-border: #27324a;
+  --sidebar-hover: #1d263c;
+  --sidebar-item: #9fb0c6;        /* 7.62 : 1 */
+  --sidebar-item-active: #93c5fd;
+  --sidebar-section: #8492a8;
+  --sidebar-active-bg: #17233f;
   --sidebar-accent: #60a5fa;
 
   /* Elevation — deeper on dark */

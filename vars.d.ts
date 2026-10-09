@@ -35,6 +35,8 @@ export declare const vars: {
   readonly fontLg: 'var(--font-lg)'
   readonly fontXl: 'var(--font-xl)'
   readonly fontXxl: 'var(--font-xxl)'
+  readonly fontDisplay: 'var(--font-display)'
+  readonly fontStat: 'var(--font-stat)'
   readonly uiFont: 'var(--ui-font)'
   readonly monoFont: 'var(--mono-font)'
   readonly bg: 'var(--bg)'
@@ -156,6 +158,8 @@ type BrandValues = {
   readonly fontLg: string
   readonly fontXl: string
   readonly fontXxl: string
+  readonly fontDisplay: string
+  readonly fontStat: string
   readonly uiFont: string
   readonly monoFont: string
   readonly bg: string
@@ -280,6 +284,8 @@ export type BrandVarName =
   | '--font-lg'
   | '--font-xl'
   | '--font-xxl'
+  | '--font-display'
+  | '--font-stat'
   | '--ui-font'
   | '--mono-font'
   | '--bg'

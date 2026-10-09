@@ -73,10 +73,10 @@ Dunkelmodus: `data-theme="dark"` auf `<html>` setzen, alle Variablen schalten mi
   und Routing bleiben im jeweiligen Projekt.
 - Abweichungen eines Verbrauchers (z. B. größere Schriften der Website) gehören in dessen eigenes
   CSS *nach* dem Import — nie hierher.
-- **Eckig:** `--radius-xxs` bis `--radius-xl` sind `0px` — Flächen sind Rechtecke mit sichtbarem
-  Rahmen, die Tiefe kommt vom Rahmen, nicht von Rundung. Nur `--radius-pill` (999px) bleibt rund,
-  für Meter und Schieberegler. Verbraucher setzen **keine eigenen Radien**, sondern nutzen immer
-  `var(--radius-*)` — so folgen Portal und Website automatisch, falls sich das je ändert.
+- **Weich, nicht eckig (seit 1.4.0):** `--radius-xxs` bis `--radius-xl` sind 2/4/6/6/8/12 px,
+  `--radius-pill` 999 px — Flächen tragen eine Haarlinie (`--border`) plus `--shadow-sm`, die Tiefe
+  kommt aus beidem, nicht aus einem kräftigen Rahmen. Verbraucher setzen **keine eigenen Radien**,
+  sondern nutzen immer `var(--radius-*)` — die Stufe sagt, welche Art Fläche gemeint ist.
 - Keine Verläufe, `--brand` (#ed1c24) nie als Button-Fläche und nie als Text unter ~24 px.
 
 ## Bausteine

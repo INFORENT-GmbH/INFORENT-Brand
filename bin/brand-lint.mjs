@@ -15,7 +15,7 @@
 // Rules (docs: README.md "brand-lint"):
 //   color      hex / rgb() / hsl() literal — use var(--…) or `vars.*`
 //   gradient   linear/radial/conic-gradient — the brand has no gradients
-//   radius     a border radius other than 0 or a var(--radius-*) — the brand is square
+//   radius     a border radius other than 0 or a var(--radius-*) — only the brand's scale
 //   font       a literal font-family — use var(--ui-font) / var(--mono-font)
 //   font-cdn   fonts from a CDN (Google Fonts, Typekit …) — self-host via @fontsource
 //   unknown-var  var(--x) where --x is neither a brand variable nor declared in
@@ -126,7 +126,7 @@ const RULES = [
       // (a prop, a helper) cannot be judged here and passes.
       return /\d/.test(v) && !/^[A-Za-z_$][\w$.]*\s*$/.test(v)
     },
-    msg: 'eigener Eckenradius — die Brand ist eckig: 0 oder var(--radius-*)',
+    msg: 'eigener Eckenradius — nur die Skala der Brand: 0 oder var(--radius-*)',
   },
   {
     // A local radius scale (`const radius = { sm: 4, md: 8 }`) hides its numbers

@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.4.0 — 2026-10-09
+
+- **Portal-Redesign 2026, Etappe 1 (Tokens):** die Flächen werden weich — `--radius-xxs…xl` =
+  2/4/6/6/8/12 px statt 0; Ränder sind Haarlinien (`--border-subtle #eceff3`, `--border #e2e7ee`,
+  `--border-strong` bleibt), die Tiefe trägt `--shadow-sm`; `--bg #f5f7fa`.
+- **Seitenleiste folgt dem Theme:** `--sidebar*` sind hell (weiße Leiste, Haarlinie, aktiver Eintrag
+  `--primary-soft`/`--primary-strong`) und im Dark Mode die dunkle Fläche — nicht mehr Schiefer in
+  beiden Themes. Namen unverändert; Skins überschreiben sie weiter.
+- Neue Schriftstufen `--font-display` (24 px, Seitentitel) und `--font-stat` (28 px, Kennzahl).
+- brand-lint: Meldung der Radius-Regel umformuliert (die Regel selbst bleibt: nur `var(--radius-*)`).
+
 ## 1.3.1 — 2026-09-25
 
 - `components.css`: Hover/aktiv auch für Links im Knopf-Look (`a.ir-btn`) — `base.css` deckt nur `<button>` ab.
